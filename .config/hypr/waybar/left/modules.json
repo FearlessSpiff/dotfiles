@@ -1,0 +1,137 @@
+{
+  "wlr/taskbar": {
+    "orientation": "vertical",
+    "format": "{icon}",
+    "icon-size": 18,
+    "tooltip": false,
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "rewrite": {
+      "Firefox Web Browser": "Firefox",
+      "Foot Server": "Terminal"
+    }
+  },
+  "custom/killactive": {
+    "format": "\uF05C",
+    "on-click": "hyprctl dispatch killactive",
+    "tooltip": false
+  },
+  "custom/toggle-osk": {
+    "format": "⌨",
+    "on-click": "/home/steph/.config/hypr/waybar/scripts/toggle-wvkbd.sh",
+    "tooltip": false
+  },
+  "custom/filemanager": {
+    "format": "",
+    "on-click": "dolphin",
+    "tooltip": false
+  },
+  "custom/browser": {
+    "format": "",
+    "on-click": "firefox",
+    "tooltip": false
+  },
+  "custom/togglesplit": {
+    "format": "\uF009",
+    "on-click": "hyprctl dispatch togglesplit",
+    "tooltip": false
+  },
+  "custom/resize-vert-bigger": {
+    "format": "\uDB81\uDF35",
+    "on-click": "hyprctl dispatch resizeactive 50 0",
+    "tooltip": false
+  },
+  "custom/resize-vert-smaller": {
+    "format": "\uDB81\uDF32",
+    "on-click": "hyprctl dispatch resizeactive -50 0",
+    "tooltip": false
+  },
+  "custom/resize-horiz-bigger": {
+    "format": "\uDB81\uDF38",
+    "on-click": "hyprctl dispatch resizeactive 0 50",
+    "tooltip": false
+  },
+  "custom/resize-horiz-smaller": {
+    "format": "\uDB81\uDF2F",
+    "on-click": "hyprctl dispatch resizeactive 0 -50",
+    "tooltip": false
+  },
+  "group/layout": {
+    "orientation": "vertical",
+    "modules": [
+      "custom/togglesplit",
+      "custom/resize-vert-bigger",
+      "custom/resize-vert-smaller",
+      "custom/resize-horiz-bigger",
+      "custom/resize-horiz-smaller"
+    ]
+  },
+  "custom/togglefloating": {
+    "format": "\uF08B",
+    "on-click": "hyprctl dispatch togglefloating",
+    "tooltip": false
+  },
+  "custom/move-right": {
+    "format": "\uEA9F",
+    "on-click": "hyprctl dispatch movewindow r",
+    "tooltip": false
+  },
+  "custom/move-left": {
+    "format": "\uEA9E",
+    "on-click": "hyprctl dispatch movewindow l",
+    "tooltip": false
+  },
+  "custom/move-up": {
+    "format": "\uEAA0",
+    "on-click": "hyprctl dispatch movewindow u",
+    "tooltip": false
+  },
+  "custom/move-down": {
+    "format": "\uEA9D",
+    "on-click": "hyprctl dispatch movewindow d",
+    "tooltip": false
+  },
+  "group/move": {
+    "orientation": "vertical",
+    "modules": [
+      "custom/togglefloating",
+      "custom/move-right",
+      "custom/move-left",
+      "custom/move-up",
+      "custom/move-down"
+    ]
+  },
+  "custom/to-next-ws": {
+    "format": "\uDB80\uDD3E",
+    "on-click": "hyprctl dispatch movetoworkspace +1",
+    "tooltip": false
+  },
+  "custom/to-prev-ws": {
+    "format": "\uDB80\uDD3D",
+    "on-click": "hyprctl dispatch movetoworkspace -1",
+    "tooltip": false
+  },
+  "group/to-rel-ws": {
+    "orientation": "vertical",
+    "modules": [
+      "custom/to-next-ws",
+      "custom/to-prev-ws"
+    ]
+  },
+  "custom/appmenu": {
+    "format": "\uEB44",
+    "on-click": "rofi -show drun -show-icons -replace",
+    "tooltip": false
+  },
+  "tray": {
+    "spacing": 10
+  },
+  "group/quicklinks": {
+    "orientation": "vertical",
+    "modules": [
+      "custom/filemanager",
+      "custom/browser"
+    ]
+  }
+}
+

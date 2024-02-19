@@ -1,0 +1,173 @@
+{
+  "hyprland/workspaces": {
+    "on-click": "activate",
+    "active-only": false,
+    "all-outputs": true,
+    "format": " {icon} ",
+    "format-icons": {
+      "1": "\uE3E3",
+      "2": "\uE3E3",
+      "3": "\uE3E3",
+      "4": "\uE3E3",
+      "5": "\uE3E3"
+    },
+    "persistent-workspaces": {
+      "*": 5
+    }
+  },
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 18,
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "rewrite": {
+      "Firefox Web Browser": "Firefox",
+      "Foot Server": "Terminal"
+    }
+  },
+  "hyprland/window": {
+    "rewrite": {
+      "(.*) - Brave": "$1",
+      "(.*) - Chromium": "$1",
+      "(.*) - Brave Search": "$1",
+      "(.*) - Outlook": "$1",
+      "(.*) Microsoft Teams": "$1"
+    },
+    "separate-outputs": true
+  },
+  "tray": {
+	"icon-size": 21,
+	"spacing": 10
+  },
+  "custom/cliphist": {
+    "format": "",
+    "on-click": "sleep 0.1 && ~/.config/hypr/cliphist.sh",
+    "on-click-right": "sleep 0.1 && ~/.config/hypr/cliphist.sh d",
+    "on-click-middle": "sleep 0.1 && ~/.config/hypr/cliphist.sh w",
+    "tooltip": false
+  },
+  "custom/toggle-leftbar": {
+    "format": "\uF44E",
+    "on-click": "~/.config/hypr/waybar/scripts/toggle-leftbar.sh",
+    "tooltip": false
+  },
+  "custom/exit": {
+    "format": " ",
+    "on-click": "bash ~/.config/rofi/leave.sh",
+    "tooltip": false
+  },
+  "clock": {
+    "format": "{:%H:%M %d.%m.%Y}",
+    "tooltip-format": "{calendar}",
+    "format-alt": "{:%Y-%m-%d}"
+  },
+  "network": {
+    "format": "{ifname}",
+    "format-wifi": "  {signalStrength}%",
+    "format-ethernet": "  {ipaddr}",
+    "format-disconnected": "Not connected",
+    "tooltip-format": " {ifname} via {gwaddri}",
+    "tooltip-format-wifi": "  {essid} ({signalStrength}%)",
+    "tooltip-format-ethernet": "  {ifname} ({ipaddr}/{cidr})",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50,
+    "on-click": "alacritty -e nmtui"
+  },
+  "battery": {
+    "states": {
+      "warning": 25,
+      "critical": 10
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": "  {capacity}%",
+    "format-alt": "{icon} {time}",
+    "format-icons": [
+      " ",
+      " ",
+      " ",
+      " ",
+      " "
+    ]
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-bluetooth": "{volume}% {icon} {format_source}",
+    "format-bluetooth-muted": " {icon} {format_source}",
+    "format-muted": " {format_source}",
+    "format-source": "{volume}% ",
+    "format-source-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": [
+        "",
+        " ",
+        " "
+      ]
+    },
+    "on-click": "pavucontrol"
+  },
+  "bluetooth": {
+    "format": " {status}",
+    "format-disabled": "\uF294 {status}",
+    "format-connected": " {num_connections}",
+    "tooltip-format": "{controller_alias}\t{controller_address}",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+    "on-click": "blueman-manager"
+  },
+  "custom/bluetoothtoggle": {
+    "format": " ",
+    "on-click": "rfkill toggle bluetooth",
+    "tooltip": false
+  },
+  "group/bluetooth": {
+    "orientation": "horizontal",
+    "modules": [
+      "bluetooth",
+      "custom/bluetoothtoggle"
+    ]
+  },
+  "group/backlight": {
+    "orientation": "horizontal",
+    "modules": [
+      "custom/backlight-minus",
+      "backlight",
+      "custom/backlight-plus"
+    ]
+  },
+  "backlight": {
+    "device": "intel_backlight",
+    "scroll-step": 5.0,
+    "format": "{percent}%",
+    "tooltip": false
+  },
+  "custom/backlight-plus": {
+    "format": "{icon}",
+    "on-click": "brightnessctl s +10%",
+    "format-icons": [
+      ""
+    ],
+    "tooltip": false
+  },
+  "custom/backlight-minus": {
+    "format": "{icon}",
+    "on-click": "brightnessctl s 10%-",
+    "format-icons": [
+      "\uF111"
+    ],
+    "tooltip": false
+  },
+  "custom/toggle-osk": {
+    "format": "⌨",
+    "on-click": "/home/steph/.config/hypr/waybar/scripts/toggle-wvkbd.sh",
+    "tooltip": false
+  }
+}
+
