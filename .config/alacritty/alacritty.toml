@@ -1,0 +1,5 @@
+import = ["/home/steph/.config/alacritty/dracula.toml"]
+
+[window]
+padding = { x = 5, y = 5 }
+decorations = "full"
