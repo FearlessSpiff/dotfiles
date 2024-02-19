@@ -7,6 +7,10 @@ vim.cmd("set shiftwidth=2")
 vim.cmd("let g:VM_maps = {}")
 vim.cmd("let g:VM_maps['Find Under']         = '<C-j>'")
 
+-- for css-highlight-colors
+vim.cmd("set termguicolors")
+vim.cmd("set t_Co=256")
+
 vim.g.mapleader = " "
 
 
