@@ -9,5 +9,6 @@ return {
   },
   config = function()
     vim.keymap.set('n', '<leader>tr', ':Neotree<CR>', {})
+    vim.keymap.set('n', '<leader>gs', ':Neotree left git_status<CR>', {})
   end
 }
