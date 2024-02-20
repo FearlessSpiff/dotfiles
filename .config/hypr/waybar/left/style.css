@@ -1,93 +1,94 @@
 * {
-    border: none;
-    border-radius: 7px;
-    font-family: "JetbrainsMono Nerd Font", serif ;
-    font-size: 24px;
-    color: #282a36;
-    margin: 2px 1px 2px 1px;
+  border: none;
+  border-radius: 7px;
+  font-family: "JetbrainsMono Nerd Font", serif;
+  font-size: 24px;
+  color: #282a36;
+  margin: 2px 1px 2px 1px;
 }
 
 window#waybar {
-    background: transparent;
+  background: transparent;
 }
 
 window#waybar.hidden {
-    opacity: 0.2;
+  opacity: 0.2;
 }
 
 #custom-appmenu {
-    background: #50fa7b;
-    padding: 0 14px 0 8px;
-    margin-top: 0;
+  background: #50fa7b;
+  padding: 0 14px 0 8px;
+  margin-top: 0;
 }
 
 #custom-killactive {
-    background: #ff5555;
-    padding: 0 14px 0 8px;
+  background: #ff5555;
+  padding: 0 14px 0 8px;
 }
 
 #custom-togglefloating {
-    background: #ffb86c;
-    border-radius: 7px 7px 0 0;
-    padding: 0 15px 0 7px;
-    margin-top: 0;
-    margin-bottom: 0;
+  background: #ffb86c;
+  border-radius: 7px 7px 0 0;
+  padding: 0 15px 0 7px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 #custom-move-right,
 #custom-move-left,
 #custom-move-up {
-    border-radius: 0;
-    background: #ffb86c;
-    padding: 0 12px 0 10px;
-    margin-top: 0;
-    margin-bottom: 0;
+  border-radius: 0;
+  background: #ffb86c;
+  padding: 0 12px 0 10px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 #custom-move-down {
-    background: #ffb86c;
-    border-radius: 0 0 7px 7px;
-    padding: 0 12px 0 10px;
-    margin-top: 0;
+  background: #ffb86c;
+  border-radius: 0 0 7px 7px;
+  padding: 0 12px 0 10px;
+  margin-top: 0;
 }
 
 #custom-togglesplit {
-    background: #ff79c6;
-    border-radius: 7px 7px 0 0;
-    padding: 0 15px 0 7px;
-    margin-top: 0;
-    margin-bottom: 0;
+  background: #ff79c6;
+  border-radius: 7px 7px 0 0;
+  padding: 0 15px 0 7px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 #custom-resize-vert-bigger,
 #custom-resize-vert-smaller,
 #custom-resize-horiz-bigger {
-    border-radius: 0;
-    background: #ff79c6;
-    padding: 0 13px 0 9px;
-    margin-top: 0;
-    margin-bottom: 0;
+  border-radius: 0;
+  background: #ff79c6;
+  padding: 0 13px 0 9px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 #custom-resize-horiz-smaller {
-    background: #ff79c6;
-    border-radius: 0 0 7px 7px;
-    padding: 0 13px 0 9px;
-    margin-top: 0;
-    margin-bottom: 0;
+  background: #ff79c6;
+  border-radius: 0 0 7px 7px;
+  padding: 0 13px 0 9px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
+
 #custom-to-next-ws {
-    background: #f1fa8c;
-    border-radius: 7px 7px 0 0;
-    padding: 0 10px 0 12px;
-    margin-top: 0;
-    margin-bottom: 0;
+  background: #f1fa8c;
+  border-radius: 7px 7px 0 0;
+  padding: 0 10px 0 12px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 #custom-to-prev-ws {
-    background: #f1fa8c;
-    border-radius: 0 0 7px 7px;
-    padding: 0 10px 0 12px;
-    margin-top: 0;
-    margin-bottom: 0;
+  background: #f1fa8c;
+  border-radius: 0 0 7px 7px;
+  padding: 0 10px 0 12px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
