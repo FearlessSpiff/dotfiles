@@ -12,4 +12,4 @@ pacman -S TODO
 ## clone repo
 `git clone https://github.com/FearlessSpiff/dotfiles.git`
 ## symlink with stow in repo dir
-`stow -t /home/steph .`
+`stow -t /home/<username> .`
