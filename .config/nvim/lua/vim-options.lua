@@ -12,6 +12,11 @@ vim.cmd("let g:VM_maps['Find Under']         = '<C-j>'")
 vim.cmd("set termguicolors")
 vim.cmd("set t_Co=256")
 
+-- for treesitter
+vim.filetype.add({
+  pattern = { [".*/hypr.*.conf"] = "hyprlang" },
+})
+
 vim.g.mapleader = " "
 
 
