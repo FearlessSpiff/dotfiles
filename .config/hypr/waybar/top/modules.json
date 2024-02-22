@@ -15,31 +15,6 @@
       "*": 5
     }
   },
-  "wlr/taskbar": {
-    "format": "{icon}",
-    "icon-size": 18,
-    "tooltip-format": "{title}",
-    "on-click": "activate",
-    "on-click-middle": "close",
-    "rewrite": {
-      "Firefox Web Browser": "Firefox",
-      "Foot Server": "Terminal"
-    }
-  },
-  "hyprland/window": {
-    "rewrite": {
-      "(.*) - Brave": "$1",
-      "(.*) - Chromium": "$1",
-      "(.*) - Brave Search": "$1",
-      "(.*) - Outlook": "$1",
-      "(.*) Microsoft Teams": "$1"
-    },
-    "separate-outputs": true
-  },
-  "tray": {
-    "icon-size": 21,
-    "spacing": 10
-  },
   "custom/cliphist": {
     "format": "",
     "on-click": "sleep 0.1 && ~/.config/hypr/cliphist.sh",
