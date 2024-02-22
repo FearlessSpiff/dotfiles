@@ -23,7 +23,7 @@ window#waybar.hidden {
 
 #custom-killactive {
   background: #ff5555;
-  padding: 0 14px 0 8px;
+  padding: 2px 10px 2px 8px;
 }
 
 #custom-togglefloating {
