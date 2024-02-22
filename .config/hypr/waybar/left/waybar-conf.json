@@ -10,7 +10,6 @@
   ],
   "modules-left": [
     "custom/appmenu",
-    "custom/killactive",
     "group/to-rel-ws",
     "group/layout",
     "group/move"
