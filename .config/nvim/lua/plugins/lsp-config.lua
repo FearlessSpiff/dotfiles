@@ -9,7 +9,7 @@ return {
 		"williamboman/mason-lspconfig.nvim",
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "jsonls", "cssls" },
+				ensure_installed = { "lua_ls", "jsonls", "cssls", "bashls"},
 			})
 		end,
 	},
@@ -20,6 +20,7 @@ return {
 			lspconfig.lua_ls.setup({})
 			lspconfig.jsonls.setup({})
 			lspconfig.cssls.setup({})
+			lspconfig.bashls.setup({})
 
 			vim.api.nvim_create_autocmd("LspAttach", {
 				group = vim.api.nvim_create_augroup("UserLspConfig", {}),
@@ -49,6 +50,7 @@ return {
 				sources = {
 					null_ls.builtins.formatting.stylua,
 					null_ls.builtins.formatting.prettier,
+					null_ls.builtins.formatting.shfmt,
 					null_ls.builtins.diagnostics.eslint_d,
 				},
 			})

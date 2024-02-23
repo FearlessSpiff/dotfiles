@@ -5,7 +5,7 @@
 WVKBD_PID="$(pgrep -f '.*wvkbd-mobintl.*')"
 
 if [[ -n $WVKBD_PID ]]; then
-  killall wvkbd-mobintl
+	killall wvkbd-mobintl
 else
-  /usr/bin/wvkbd-mobintl -L 280 &
+	/usr/bin/wvkbd-mobintl -L 280 &
 fi
