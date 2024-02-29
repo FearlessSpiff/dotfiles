@@ -1,18 +1,17 @@
 {
   "hyprland/workspaces": {
     "on-click": "activate",
-    "active-only": false,
-    "all-outputs": true,
     "format": " {icon} ",
     "format-icons": {
-      "1": "\uE3E3",
-      "2": "\uE3E3",
-      "3": "\uE3E3",
-      "4": "\uE3E3",
-      "5": "\uE3E3"
-    },
-    "persistent-workspaces": {
-      "*": 5
+      "1": "󰲠",
+      "2": "󰲢",
+      "3": "󰲤",
+      "4": "󰲦",
+      "5": "󰲨",
+      "6": "󰲪",
+      "7": "󰲬",
+      "8": "󰲮",
+      "9": "󰲰"
     }
   },
   "custom/cliphist": {
