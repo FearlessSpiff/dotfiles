@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 
 choice=$(printf " Cancel\n Lock\n󰈇 Logout\n Suspend\n Reboot\n Shutdown" | fuzzel --dmenu)
-if [[ $choice == "Lock" ]];then
+if [[ $choice == " Lock" ]];then
     bash ~/.config/system_scripts/wayland_session_lock
-elif [[ $choice == "Logout" ]];then
+elif [[ $choice == "󰈇 Logout" ]];then
     pkill -KILL -u "$USER"
-elif [[ $choice == "Suspend" ]];then
+elif [[ $choice == " Suspend" ]];then
     systemctl suspend
-elif [[ $choice == "Reboot" ]];then
+elif [[ $choice == " Reboot" ]];then
     systemctl reboot
-elif [[ $choice == "Shutdown" ]];then
+elif [[ $choice == " Shutdown" ]];then
     systemctl poweroff
 fi
 
