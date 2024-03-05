@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-choice=$(printf " Lock\n󰈇 Logout\n Suspend\n Reboot\n Shutdown\n Cancel" | fuzzel --dmenu)
+choice=$(printf " Cancel\n Lock\n󰈇 Logout\n Suspend\n Reboot\n Shutdown" | fuzzel --dmenu)
 if [[ $choice == "Lock" ]];then
     bash ~/.config/system_scripts/wayland_session_lock
 elif [[ $choice == "Logout" ]];then
