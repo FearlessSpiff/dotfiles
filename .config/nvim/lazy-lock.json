@@ -1,5 +1,5 @@
 {
-  "auto-session": { "branch": "main", "commit": "29a8c77a0579636d5520aebd38bdbc2e6079f2f5" },
+  "before.nvim": { "branch": "master", "commit": "4772995f3bc0d1e754b8a9c00c01965d5c1592aa" },
   "dracula.nvim": { "branch": "master", "commit": "c717f28b96814889e3f3a1d10aa55dc73073777a" },
   "gitsigns.nvim": { "branch": "main", "commit": "2c2463dbd82eddd7dbab881c3a62cfbfbe3c67ae" },
   "lazy.nvim": { "branch": "main", "commit": "aedcd79811d491b60d0a6577a9c1701063c2a609" },
