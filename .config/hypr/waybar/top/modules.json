@@ -16,9 +16,9 @@
   },
   "custom/cliphist": {
     "format": "",
-    "on-click": "sleep 0.1 && ~/.config/hypr/cliphist.sh",
-    "on-click-right": "sleep 0.1 && ~/.config/hypr/cliphist.sh d",
-    "on-click-middle": "sleep 0.1 && ~/.config/hypr/cliphist.sh w",
+    "on-click": "sleep 0.1 && ~/.config/hypr/scripts/cliphist.sh",
+    "on-click-right": "sleep 0.1 && ~/.config/hypr/scripts/cliphist.sh d",
+    "on-click-middle": "sleep 0.1 && ~/.config/hypr/scripts/cliphist.sh w",
     "tooltip": false
   },
   "custom/toggle-leftbar": {
@@ -28,7 +28,7 @@
   },
   "custom/exit": {
     "format": " ",
-    "on-click": "bash ~/.config/hypr/leave.sh",
+    "on-click": "bash ~/.config/hypr/scripts/leave.sh",
     "tooltip": false
   },
   "clock": {
