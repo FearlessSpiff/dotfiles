@@ -28,7 +28,7 @@
   },
   "custom/exit": {
     "format": " ",
-    "on-click": "bash ~/.config/fuzzel/leave.sh",
+    "on-click": "bash ~/.config/hypr/leave.sh",
     "tooltip": false
   },
   "clock": {

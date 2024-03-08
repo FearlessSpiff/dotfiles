@@ -1,16 +1,16 @@
 #!/bin/bash
 case $1 in
 d)
-	cliphist list | rofi -dmenu -replace | cliphist delete
+	cliphist list | wofi -dmenu | cliphist delete
 	;;
 
 w)
-	if [ $(echo -e "Clear\nCancel" | rofi -dmenu) == "Clear" ]; then
+	if [ $(echo -e "Clear\nCancel" | wofi -dmenu) == "Clear" ]; then
 		cliphist wipe
 	fi
 	;;
 
 *)
-	cliphist list | rofi -dmenu -replace | cliphist decode | wl-copy
+	cliphist list | wofi -dmenu | cliphist decode | wl-copy
 	;;
 esac
