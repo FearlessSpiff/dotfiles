@@ -120,7 +120,7 @@
   },
   "custom/appmenu": {
     "format": "\uEB44",
-    "on-click": "rofi -show drun -show-icons -replace",
+    "on-click": " wofi --show=drun --allow-images",
     "tooltip": false
   },
   "tray": {
