@@ -2,7 +2,7 @@
 
 choice=$(printf " Cancel\n Lock\n󰈇 Logout\n Suspend\n Reboot\n Shutdown" | wofi --dmenu)
 if [[ $choice == " Lock" ]];then
-    bash ~/.config/system_scripts/wayland_session_lock
+    loginctl lock-session
 elif [[ $choice == "󰈇 Logout" ]];then
     pkill -KILL -u "$USER"
 elif [[ $choice == " Suspend" ]];then
