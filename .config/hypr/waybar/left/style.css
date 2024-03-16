@@ -26,6 +26,27 @@ window#waybar.hidden {
   padding: 2px 10px 2px 8px;
 }
 
+#custom-terminal {
+  background: #6272a4;
+  border-radius: 7px 7px 0 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#custom-filemanager {
+  border-radius: 0;
+  background: #6272a4;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#custom-browser {
+  background: #6272a4;
+  border-radius: 0 0 7px 7px;
+  padding: 0 0  0 0;
+  margin-top: 0;
+}
+
 #custom-togglefloating {
   background: #ffb86c;
   border-radius: 7px 7px 0 0;

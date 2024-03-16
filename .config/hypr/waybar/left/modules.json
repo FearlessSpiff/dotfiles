@@ -21,15 +21,28 @@
     "on-click": "/home/steph/.config/hypr/waybar/scripts/toggle-wvkbd.sh",
     "tooltip": false
   },
+  "custom/terminal": {
+    "format": "",
+    "on-click": "alacritty",
+    "tooltip": false
+  },
   "custom/filemanager": {
-    "format": "",
-    "on-click": "dolphin",
+    "format": "",
+    "on-click": "nautilus",
     "tooltip": false
   },
   "custom/browser": {
-    "format": "",
-    "on-click": "firefox",
+    "format": "",
+    "on-click": "google-chrome-stable",
     "tooltip": false
+  },
+  "group/apps": {
+    "orientation": "vertical",
+    "modules": [
+      "custom/terminal",
+      "custom/filemanager",
+      "custom/browser"
+    ]
   },
   "custom/togglesplit": {
     "format": "\uF009",
@@ -125,12 +138,5 @@
   },
   "tray": {
     "spacing": 10
-  },
-  "group/quicklinks": {
-    "orientation": "vertical",
-    "modules": [
-      "custom/filemanager",
-      "custom/browser"
-    ]
   }
 }
