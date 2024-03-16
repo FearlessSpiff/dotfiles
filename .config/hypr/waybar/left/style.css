@@ -17,13 +17,19 @@ window#waybar.hidden {
 
 #custom-appmenu {
   background: #50fa7b;
-  padding: 2px 10px 2px 8px;
+  padding: 2px 10px 2px 6px;
   margin-top: 0;
 }
 
 #custom-killactive {
   background: #ff5555;
-  padding: 2px 10px 2px 8px;
+  padding: 2px 10px 2px 6px;
+}
+
+#custom-toggle-osk {
+  background: #8be9fd;
+  padding: 2px 10px 2px 6px;
+  margin-bottom: 2px;
 }
 
 #custom-terminal {

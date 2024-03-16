@@ -23,7 +23,7 @@
   },
   "custom/toggle-leftbar": {
     "format": "\uF44E",
-    "on-click": "~/.config/hypr/waybar/scripts/toggle-leftbar.sh",
+    "on-click": "~/.config/hypr/waybar/scripts/leftbar-toggle.sh",
     "tooltip": false
   },
   "custom/exit": {
@@ -140,7 +140,7 @@
   },
   "custom/toggle-osk": {
     "format": "⌨",
-    "on-click": "/home/steph/.config/hypr/waybar/scripts/toggle-wvkbd.sh",
+    "on-click": "/home/steph/.config/hypr/waybar/scripts/wvkbd-toggle.sh",
     "tooltip": false
   }
 }
