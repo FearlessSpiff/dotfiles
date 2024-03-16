@@ -11,7 +11,8 @@
   "modules-left": [
     "custom/appmenu",
     "custom/killactive",
-    "custom/toggle-osk",
+    "custom/enable-osk",
+    "custom/disable-osk",
     "group/apps",
     "group/to-rel-ws",
     "group/layout",

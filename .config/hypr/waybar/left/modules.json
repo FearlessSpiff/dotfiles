@@ -23,6 +23,16 @@
     "exec": "sleep 0.2 && /home/steph/.config/hypr/waybar/scripts/squeekboard-status.sh",
     "tooltip": false
   },
+  "custom/enable-osk": {
+    "format": "󰌌",
+    "on-click": "/home/steph/.config/hypr/waybar/scripts/squeekboard-enable.sh",
+    "tooltip": false
+  },
+  "custom/disable-osk": {
+    "format": "󰌐",
+    "on-click": "/home/steph/.config/hypr/waybar/scripts/squeekboard-disable.sh",
+    "tooltip": false
+  },
   "custom/terminal": {
     "format": "",
     "on-click": "alacritty",
