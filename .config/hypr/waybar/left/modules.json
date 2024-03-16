@@ -45,7 +45,7 @@
   },
   "custom/browser": {
     "format": "",
-    "on-click": "google-chrome-stable",
+    "on-click": "firefox",
     "tooltip": false
   },
   "group/apps": {
