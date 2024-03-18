@@ -19,8 +19,8 @@
   "custom/toggle-osk": {
     "format": "{}",
     "signal": 3,
-    "on-click": "sleep 0.2 && /home/steph/.config/hypr/waybar/scripts/squeekboard-toggle.sh",
-    "exec": "sleep 0.2 && /home/steph/.config/hypr/waybar/scripts/squeekboard-status.sh",
+    "on-click": "/home/steph/.config/hypr/waybar/scripts/squeekboard-toggle.sh",
+    "exec": "/home/steph/.config/hypr/waybar/scripts/squeekboard-status.sh",
     "tooltip": false
   },
   "custom/enable-osk": {

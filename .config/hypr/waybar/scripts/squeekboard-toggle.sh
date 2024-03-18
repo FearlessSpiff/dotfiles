@@ -1,14 +1,14 @@
 #!/bin/bash
 
-# "on-click": "killall -34 wvkbd-mobintl",
-
 SB_PID="$(pgrep -f '/usr/bin/squeekboard')"
 
 if [[ -n $SB_PID ]]; then
 	killall squeekboard
+  notify-send '*disabled* squeekboard'
   printf '󰌐';
 else
 	/usr/bin/squeekboard &
+  notify-send 'enabled squeekboard'
   printf '󰌌';
 fi
-~/.config/hypr/waybar/scripts/leftbar-update.sh
+sleep 1 && ~/.config/hypr/waybar/scripts/leftbar-update.sh
