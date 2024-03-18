@@ -6,7 +6,7 @@ pacman -S git stow
 ```
 ## other needed dependencies for hyprland
 ```
-pacman -S TODO
+paru -S nvim squeekboard aerc w3m dante alacritty mc fzf zsh-fzf-plugin-git dunst wofi lazygit
 ```
 # restore
 ## clone repo
