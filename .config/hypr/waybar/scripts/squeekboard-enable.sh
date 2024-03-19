@@ -5,7 +5,8 @@
 SB_PID="$(pgrep -f '/usr/bin/squeekboard')"
 
 if [[ -n $SB_PID ]]; then
-  echo 'already running'
+  notify-send 'squeekboard already running'
 else
 	/usr/bin/squeekboard &
+  notify-send 'started squeekboard'
 fi

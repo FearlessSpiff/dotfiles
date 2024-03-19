@@ -5,7 +5,8 @@
 SB_PID="$(pgrep -f '/usr/bin/squeekboard')"
 
 if [[ -n $SB_PID ]]; then
-	killall squeekboard
+  killall squeekboard
+  notify-send '*disabled* squeekboard'
 else
-  echo 'nothing running that could be closed'
+  notify-send 'already *disabled* squeekboard'
 fi
