@@ -11,6 +11,7 @@
   "modules-left": [
     "custom/appmenu",
     "custom/killactive",
+    "group/apps",
     "group/to-rel-ws",
     "group/layout",
     "group/move"

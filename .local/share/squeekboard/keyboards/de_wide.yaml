@@ -1,0 +1,135 @@
+---
+outlines:
+    default:   { width: 48,   height: 42 }
+    halfwidth: { width: 24,   height: 42 }
+    thin:      { width: 30,   height: 42 }
+    narrow:    { width: 40.5, height: 42 }
+    altline:   { width: 81,   height: 42 }
+    wide:      { width: 108,  height: 42 }
+    spaceline: { width: 156,  height: 42 }
+    special:   { width: 48,   height: 42 }
+    small:     { width: 67.4, height: 22 }
+
+views:
+    base:
+        - "EscSmall TabSmall Ctrl Alt ↑ ↓ ← →"
+        - "q w e r t z u i o p ü"
+        - "a s d f g h j k l ö ä"
+        - "Shift_L   y x c v b n m ß-thin BackSpace"
+        - "show_numbers show_eschars preferences         space        ,-narrow .-narrow Return"
+    upper:
+        - "Q W E R T Z U I O P Ü"
+        - "A S D F G H J K L Ö Ä"
+        - "Shift_L   Y X C V B N M --thin BackSpace"
+        - "show_numbers show_eschars preferences         space        !-narrow ?-narrow Return"
+    numbers:
+        - "1 2 3 4 5 6 7 8 9 0"
+        - "@ # € % & - _ + ( )"
+        - "show_symbols   ; \" ' : = < >  BackSpace"
+        - "show_letters show_eschars preferences         space        ,-narrow .-narrow Return"
+    symbols:
+        - "~ ` ´ | · √ µ ÷ × ¶"
+        - "© ® £ $ ¥ ^ ° * { }"
+        - "show_numbers   \\ / § π τ [ ]  BackSpace"
+        - "show_letters show_eschars preferences         space        ,-narrow .-narrow Return"
+    eschars:
+        - "ä è é ö ü Ä È É Ö Ü"
+        - "à â ê î ô À Â È Î Ô"
+        - "show_numbers  « » ç Ç æ œ ß  BackSpace"
+        - "show_letters show_eschars preferences         space        „ “ Return"
+
+buttons:
+    Shift_L:
+        action:
+            locking:
+                lock_view: "upper"
+                unlock_view: "base"
+        outline: "altline"
+        icon: "key-shift"
+    BackSpace:
+        outline: "altline"
+        icon: "edit-clear-symbolic"
+        action: "erase"
+    preferences:
+        action: "show_prefs"
+        outline: "special"
+        icon: "keyboard-mode-symbolic"
+    show_numbers:
+        action:
+            set_view: "numbers"
+        outline: "altline"
+        label: "123"
+    show_letters:
+        action:
+            set_view: "base"
+        outline: "altline"
+        label: "ABC"
+    show_symbols:
+        action:
+            set_view: "symbols"
+        outline: "altline"
+        label: "*/="
+    show_eschars:
+        action:
+            locking:
+                lock_view: "eschars"
+                unlock_view: "base"
+        outline: "altline"
+        label: "Ää"
+    space:
+        outline: "spaceline"
+        text: " "
+    Return:
+        outline: "altline"
+        icon: "key-enter"
+        keysym: "Return"
+    „:
+        outline: "narrow"
+    “:
+        outline: "narrow"
+    ",-narrow":
+        outline: "narrow"
+        text: ","
+    .-narrow:
+        outline: "narrow"
+        text: "."
+    "!-narrow":
+        outline: "narrow"
+        text: "!"
+    ?-narrow:
+        outline: "narrow"
+        text: "?"
+    --thin:
+        outline: "thin"
+        text: "-"
+    ß-thin:
+        outline: "thin"
+        text: "ß"
+    "↑":
+        outline: "small"
+        keysym: "Up"
+    "↓":
+        outline: "small"
+        keysym: "Down"
+    "←":
+        outline: "small"
+        keysym: "Left"
+    "→":
+        outline: "small"
+        keysym: "Right"
+    Ctrl:
+        modifier: "Control"
+        outline: "small"
+        label: "Ctrl"
+    Alt:
+        modifier: "Alt"
+        outline: "small"
+        label: "Alt"
+    EscSmall:
+        outline: "small"
+        keysym: "Escape"
+        label: "Esc"
+    TabSmall:
+        outline: "small"
+        keysym: "Tab"
+        label: "Tab"

@@ -1,2 +1,4 @@
 **.idea
 **.iml
+.config/mc/panels.ini
+.config/aerc/accounts.conf

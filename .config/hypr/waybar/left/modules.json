@@ -17,19 +17,44 @@
     "tooltip": false
   },
   "custom/toggle-osk": {
-    "format": "⌨",
-    "on-click": "/home/steph/.config/hypr/waybar/scripts/toggle-wvkbd.sh",
+    "format": "{}",
+    "signal": 3,
+    "on-click": "/home/steph/.config/hypr/waybar/scripts/squeekboard-toggle.sh",
+    "exec": "/home/steph/.config/hypr/waybar/scripts/squeekboard-status.sh",
+    "tooltip": false
+  },
+  "custom/enable-osk": {
+    "format": "󰌌",
+    "on-click": "/home/steph/.config/hypr/waybar/scripts/squeekboard-enable.sh",
+    "tooltip": false
+  },
+  "custom/disable-osk": {
+    "format": "󰌐",
+    "on-click": "/home/steph/.config/hypr/waybar/scripts/squeekboard-disable.sh",
+    "tooltip": false
+  },
+  "custom/terminal": {
+    "format": "",
+    "on-click": "alacritty",
     "tooltip": false
   },
   "custom/filemanager": {
-    "format": "",
-    "on-click": "dolphin",
+    "format": "",
+    "on-click": "nautilus",
     "tooltip": false
   },
   "custom/browser": {
-    "format": "",
+    "format": "",
     "on-click": "firefox",
     "tooltip": false
+  },
+  "group/apps": {
+    "orientation": "vertical",
+    "modules": [
+      "custom/terminal",
+      "custom/filemanager",
+      "custom/browser"
+    ]
   },
   "custom/togglesplit": {
     "format": "\uF009",
@@ -125,12 +150,5 @@
   },
   "tray": {
     "spacing": 10
-  },
-  "group/quicklinks": {
-    "orientation": "vertical",
-    "modules": [
-      "custom/filemanager",
-      "custom/browser"
-    ]
   }
 }

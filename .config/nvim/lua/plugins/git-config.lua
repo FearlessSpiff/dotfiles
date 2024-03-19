@@ -18,6 +18,7 @@ return {
       vim.keymap.set("n", "<leader>ga", ":Gitsigns stage_hunk<CR>", {})
       vim.keymap.set("n", "<leader>gn", ":Gitsigns next_hunk<CR>", {})
       vim.keymap.set("n", "<leader>gp", ":Gitsigns prev_hunk<CR>", {})
+      vim.keymap.set("n", "<leader>gd", ":Gitsigns diffthis<CR>", {})
     end
   },
   {
