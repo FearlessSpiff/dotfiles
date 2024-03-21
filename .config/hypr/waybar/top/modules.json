@@ -132,7 +132,7 @@
   },
   "custom/backlight-minus": {
     "format": "{icon}",
-    "on-click": "brightnessctl s 10%-",
+    "on-click": "brightnessctl --min-value=1000 s 10%-",
     "format-icons": [
       "\uF111"
     ],
