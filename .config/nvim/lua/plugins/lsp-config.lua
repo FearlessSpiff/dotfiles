@@ -9,7 +9,7 @@ return {
 		"williamboman/mason-lspconfig.nvim",
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "jsonls", "cssls", "bashls", "taplo" },
+				ensure_installed = { "lua_ls", "jsonls", "cssls", "bashls", "taplo", "clangd" },
 			})
 		end,
 	},
@@ -22,6 +22,7 @@ return {
 			lspconfig.cssls.setup({})
 			lspconfig.bashls.setup({})
 			lspconfig.taplo.setup({})
+			lspconfig.clangd.setup({})
 
 			vim.api.nvim_create_autocmd("LspAttach", {
 				group = vim.api.nvim_create_augroup("UserLspConfig", {}),
