@@ -11,8 +11,8 @@ wf-recorder_check() {
 
 wf-recorder_check
 
-SELECTION=$(echo -e "screenshot selection\nscreenshot eDP-1\nscreenshot DP-2\nscreenshot both screens\nrecord selection\nrecord eDP-1\nrecord DP-2" | wofi -dmenu)
-
+EXTERNAL_DISPLAY=$(hyprctl monitors all | grep '(ID 1)' | grep -oP 'DP-(\d)')
+SELECTION=$(echo -e "screenshot selection\nscreenshot internal display\nscreenshot external display\nscreenshot both displays\nrecord selection\nrecord internal display\nrecord external display" | wofi --dmenu)
 IMG="${HOME}/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%m-%s).png"
 VID="${HOME}/Videos/Recordings/$(date +%Y-%m-%d_%H-%m-%s).mp4"
 
@@ -23,19 +23,19 @@ case "$SELECTION" in
 		wl-copy < "$IMG"
 		notify-send "Screenshot Taken" "${IMG}"
 		;;
-	"screenshot eDP-1")
+	"screenshot internal display")
 		grim -c -o eDP-1 "$IMG"
 		wl-copy < "$IMG"
 		notify-send "Screenshot Taken" "${IMG}"
 		;;
-	"screenshot DP-2")
-		grim -c -o DP-2 "$IMG"
+	"screenshot external display")
+		grim -c -o $EXTERNAL_DISPLAY "$IMG"
 		wl-copy < "$IMG"
 		notify-send "Screenshot Taken" "${IMG}"
 		;;
-	"screenshot both screens")
+	"screenshot both displays")
 		grim -c -o eDP-1 "${IMG//.png/-eDP-1.png}"
-		grim -c -o DP-2 "${IMG//.png/-DP-2.png}"
+		grim -c -o $EXTERNAL_DISPLAY "${IMG//.png/-DP-2.png}"
 		montage "${IMG//.png/-eDP-1.png}" "${IMG//.png/-DP-2.png}" -tile 2x1 -geometry +0+0 "$IMG" 
 		wl-copy < "$IMG"
 		rm "${IMG//.png/-eDP-1.png}" "${IMG/.png/-DP-2.png}"
@@ -43,15 +43,18 @@ case "$SELECTION" in
 		;;
 	"record selection")
 		echo "$VID" > /tmp/recording.txt
-		wf-recorder -a -g "$(slurp)" -f "$VID" &>/dev/null
+		wf-recorder -c h264_vaapi -a alsa_output.pci-0000_00_1f.3.analog-stereo.monitor -g "$(slurp)" -f "$VID" &>/dev/null
+		notify-send "Recording to " "${VID}"
 		;;
-	"record eDP-1")
+	"record internal display")
 		echo "$VID" > /tmp/recording.txt
-		wf-recorder -a -o eDP-1 -f "$VID" &>/dev/null
+		wf-recorder -c h264_vaapi -a alsa_output.pci-0000_00_1f.3.analog-stereo.monitor -o eDP-1 -f "$VID" &>/dev/null
+		notify-send "Recording to " "${VID}"
 		;;
-	"record DP-2")
+	"record external display")
 		echo "$VID" > /tmp/recording.txt
-  	wf-recorder -a -o DP-2 -f "$VID" &>/dev/null
+ 		wf-recorder -c h264_vaapi -a alsa_output.pci-0000_00_1f.3.analog-stereo.monitor -o $EXTERNAL_DISPLAY -f "$VID" &>/dev/null
+		notify-send "Recording to " "${VID}"
 	;;
 "record both screens")
 	notify-send "recording both screens is not functional"
