@@ -104,8 +104,7 @@
   "group/bluetooth": {
     "orientation": "horizontal",
     "modules": [
-      "bluetooth",
-      "custom/bluetoothtoggle"
+      "bluetooth"
     ]
   },
   "group/backlight": {
