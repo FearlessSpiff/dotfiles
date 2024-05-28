@@ -6,7 +6,7 @@ pacman -S git stow
 ```
 ## other needed dependencies for hyprland
 ```
-paru -S nvim squeekboard aerc w3m dante alacritty mc fzf zsh-fzf-plugin-git dunst wofi lazygit iio-sensor-proxy iio-hyprland-git wf-recorder slurp grim
+paru -S neovim ttf-rains-mono-nerd aerc w3m dante alacritty mc fzf zsh-fzf-plugin-git dunst wofi lazygit iio-sensor-proxy iio-hyprland-git wf-recorder slurp grim hyprland hyprlock hyprpaper hypridle waybar blueman pavucontrol github-cli brightnessctl cliphist
 ```
 # restore
 ## clone repo
@@ -23,5 +23,5 @@ paru -S nvim squeekboard aerc w3m dante alacritty mc fzf zsh-fzf-plugin-git duns
 
 # wvkbd dracula theme
 * checkout https://github.com/jjsullivan5196/wvkbd
-* copy `./wvkbd/config.h` to checkout location
+* copy `./do-not-stow/wvkbd/config.h` to checkout location
 * `sudo make install`
