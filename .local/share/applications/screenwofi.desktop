@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Screenwofi
+Comment=Make screenshots and recordings
+Exec=bash -c '/home/steph/.config/hypr/scripts/record.sh'
+Icon=camera-web
+Terminal=true 
+Type=Application
+Categories=Application;
