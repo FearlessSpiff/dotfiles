@@ -26,6 +26,11 @@ window#waybar.hidden {
   padding: 2px 10px 2px 6px;
 }
 
+#custom-toggleopaque {
+  background: #6272a4;
+  padding: 2px 10px 2px 6px;
+}
+
 #custom-toggle-osk {
   background: #ffb86c;
   padding: 2px 10px 2px 6px;
