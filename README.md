@@ -1,6 +1,6 @@
 # How to dotfiles
 
-## Absolutley needed dependencies
+## Absolutely needed dependencies
 
 ```bash
 pacman -S git stow
@@ -18,13 +18,13 @@ paru -S neovim ttf-rains-mono-nerd aerc w3m dante alacritty mc fzf zsh-fzf-plugi
 
 `git clone https://github.com/FearlessSpiff/dotfiles.git`
 
-### Symlink with stow in repo dir
+### Symlink with stow in repo directory
 
 `stow -t /home/<username> .`
 
 ## Hints
 
-### Add new dotfile/dir
+### Add new dotfile/directory
 
 * add it to repo
 * then restow with `stow -R -t /home/<username> .`
