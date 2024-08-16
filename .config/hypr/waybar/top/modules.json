@@ -85,6 +85,8 @@
         " "
       ]
     },
+    "reverse-scrolling": true,
+    "scroll-step": 5.0,
     "on-click": "pavucontrol"
   },
   "bluetooth": {
