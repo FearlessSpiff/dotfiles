@@ -14,7 +14,13 @@ compinit
 # End of lines added by compinstall
 alias ll='ls -alh --color'
 alias grep='grep --color=auto'
-source /usr/share/nvm/init-nvm.sh
+# NCA stuff
+#
+# don't need this here: 
+# source /usr/share/nvm/init-nvm.sh
+#
+# but instead this
+export PATH=$PATH:/opt/javascript/ncanode/20.10.0/node/bin:/Users/sdick/Library/Python/3.9/bin
 
 autoload -Uz vcs_info
 precmd() { vcs_info }
