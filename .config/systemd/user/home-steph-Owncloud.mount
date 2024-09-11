@@ -1,0 +1,17 @@
+# Works only as root under /etc/systemd/system/
+# Add credentials to /etc/davfs2/secrets
+[Unit]
+Description=Mount Owncloud at boot
+After=network-online.target
+Wants=network-online.target
+
+[Mount]
+What=https://owncloud........
+Where=/home/steph/Owncloud/
+Options=uid=1000,file_mode=0664,dir_mode=2775,grpid
+Type=davfs
+TimeoutSec=30
+ForceUnmount=true
+
+[Install]
+WantedBy=multi-user.target
