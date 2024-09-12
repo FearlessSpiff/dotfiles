@@ -1,0 +1,9 @@
+# Works only as root under /etc/systemd/system/
+[Unit]
+Description=Automount Data from Node
+
+[Automount]
+Where=/home/steph/Node/Data
+
+[Install]
+WantedBy=multi-user.target

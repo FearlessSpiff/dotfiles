@@ -1,9 +1,6 @@
 # Works only as root under /etc/systemd/system/
-# And create ~/.smbcreds with
-# username=
-# password=
 [Unit]
-Description=Mount Data at boot
+Description=Mount Data from Node
 
 [Mount]
 What=//10.0.1.100/Data
