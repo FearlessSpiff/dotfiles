@@ -16,40 +16,33 @@ window#waybar.hidden {
 }
 
 #custom-appmenu {
-  background: #44475a;
   padding: 2px 10px 2px 6px;
   margin-top: 0;
 }
 
 #custom-killactive {
-  background: #44475a;
   padding: 2px 10px 2px 6px;
 }
 
 #custom-toggleopaque {
-  background: #44475a;
   padding: 2px 10px 2px 6px;
 }
 
 #custom-toggle-osk {
-  background: #44475a;
   padding: 2px 10px 2px 6px;
   margin-bottom: 2px;
 }
 
 #custom-enable-osk {
-  background: #44475a;
   padding: 2px 10px 2px 6px;
   margin-bottom: 2px;
 }
 #custom-disable-osk {
-  background: #44475a;
   padding: 2px 10px 2px 6px;
   margin-bottom: 2px;
 }
 
 #custom-terminal {
-  background: #44475a;
   border-radius: 7px 7px 0 0;
   margin-top: 0;
   margin-bottom: 0;
@@ -57,20 +50,17 @@ window#waybar.hidden {
 
 #custom-filemanager {
   border-radius: 0;
-  background: #44475a;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 #custom-browser {
-  background: #44475a;
   border-radius: 0 0 7px 7px;
   padding: 0 0  0 0;
   margin-top: 0;
 }
 
 #custom-togglefloating {
-  background: #44475a;
   border-radius: 7px 7px 0 0;
   padding: 0 9px 0 7px;
   margin-top: 0;
@@ -81,21 +71,18 @@ window#waybar.hidden {
 #custom-move-left,
 #custom-move-up {
   border-radius: 0;
-  background: #44475a;
   padding: 0 8px 0 9px;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 #custom-move-down {
-  background: #44475a;
   border-radius: 0 0 7px 7px;
   padding: 0 8px 0 9px;
   margin-top: 0;
 }
 
 #custom-togglesplit {
-  background: #44475a;
   border-radius: 7px 7px 0 0;
   padding: 0 8px 0 4px;
   margin-top: 0;
@@ -106,14 +93,12 @@ window#waybar.hidden {
 #custom-resize-vert-smaller,
 #custom-resize-horiz-bigger {
   border-radius: 0;
-  background: #44475a;
   padding: 0 8px 0 6px;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 #custom-resize-horiz-smaller {
-  background: #44475a;
   border-radius: 0 0 7px 7px;
   padding: 0 8px 0 6px;
   margin-top: 0;
@@ -121,7 +106,6 @@ window#waybar.hidden {
 }
 
 #custom-to-next-ws {
-  background: #44475a;
   border-radius: 7px 7px 0 0;
   padding: 0 5px 0 7px;
   margin-top: 0;
@@ -129,7 +113,6 @@ window#waybar.hidden {
 }
 
 #custom-to-prev-ws {
-  background: #44475a;
   border-radius: 0 0 7px 7px;
   padding: 0 5px 0 7px;
   margin-top: 0;

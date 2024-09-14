@@ -16,7 +16,6 @@ window#waybar.hidden {
 
 #workspaces {
   margin: 3px 2px 1px 2px;
-  background-color: #282a36;
 }
 
 #workspaces button {
@@ -31,7 +30,7 @@ window#waybar.hidden {
 }
 
 #workspaces button.active {
-  color: #bd93f9;
+  color: #f8f8f2;
 }
 
 #workspaces button.urgent {
