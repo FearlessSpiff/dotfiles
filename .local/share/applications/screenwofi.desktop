@@ -4,6 +4,6 @@ Name=Screenwofi
 Comment=Make screenshots and recordings
 Exec=bash -c '/home/steph/.config/hypr/scripts/record.sh'
 Icon=camera-web
-Terminal=true 
+Terminal=false
 Type=Application
 Categories=Application;

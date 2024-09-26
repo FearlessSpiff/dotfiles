@@ -1,1 +1,1 @@
-See how to here: https://wiki.archlinux.org/title/Dm-crypt/Mounting_at_login
+See how to here: https://wiki.archlinux.org/title/Pam_mount

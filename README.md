@@ -9,7 +9,18 @@ pacman -S git stow
 ## Other needed dependencies for hyprland
 
 ```bash
-paru -S neovim ttf-rains-mono-nerd aerc w3m dante alacritty mc fzf zsh-fzf-plugin-git dunst wofi lazygit iio-sensor-proxy iio-hyprland-git wf-recorder slurp grim hyprland hyprlock hyprpaper hypridle waybar blueman pavucontrol github-cli brightnessctl cliphist kanshi
+paru -S zsh neovim ttf-font-awesome ttf-jetbrains-mono-nerd dante alacritty mc fzf zsh-fzf-plugin-git dunst wofi lazygit  wf-recorder slurp grim hyprland hyprlock hyprpaper hypridle waybar xdg-desktop-portal-hyprland blueman pavucontrol github-cli brightnessctl cliphist kanshi pam_mount
+```
+
+## Fancy stuff 
+
+```bash
+paru -S aerc w3m iio-sensor-proxy iio-hyprland-git
+
+## After install
+
+* Set physical button to suspend: https://github.com/hyprwm/Hyprland/issues/2614
+* Unmmute "Output Devices" in pavucontrol
 ```
 
 ## Restore

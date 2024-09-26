@@ -1,6 +1,6 @@
 profile with-external {
   output eDP-1 disable
-  output "LG Electronics LG TV SSCR2 0x01010101" enable scale 1
+  output "LG Electronics LG TV SSCR2 0x01010101" enable scale 1.25
 }
 
 profile GO4-only {
