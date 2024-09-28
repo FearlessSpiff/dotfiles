@@ -1,0 +1,2 @@
+https://owncloud.<host>.ch/remote.php/dav/files/<user>/	/home/<user=/Owncloud	davfs	rw,user,uid=<user>,noauto 0 0
+//<host>/Data  /home/<user>/<mount>    cifs    credentials=/home/<user>/.smb-creds,user,noauto,uid=1000,rw        0 0

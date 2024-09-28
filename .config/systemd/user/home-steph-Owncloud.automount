@@ -1,9 +1,0 @@
-# Works only as root under /etc/systemd/system/
-[Unit]
-Description=Automount Owncloud
-
-[Automount]
-Where=/home/steph/Owncloud
-
-[Install]
-WantedBy=multi-user.target
