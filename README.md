@@ -9,10 +9,10 @@ pacman -S git stow
 ## Other needed dependencies for hyprland
 
 ```bash
-paru -S zsh neovim ttf-font-awesome ttf-jetbrains-mono-nerd dante alacritty mc fzf zsh-fzf-plugin-git dunst wofi lazygit  wf-recorder slurp grim hyprland hyprlock hyprpaper hypridle waybar xdg-desktop-portal-hyprland blueman pavucontrol github-cli brightnessctl cliphist kanshi pam_mount
+paru -S zsh neovim ttf-font-awesome ttf-jetbrains-mono-nerd otf-commit-mono-nerd dante alacritty mc fzf zsh-fzf-plugin-git dunst wofi lazygit  wf-recorder slurp grim hyprland hyprlock hyprpaper hypridle hyprshot waybar xdg-desktop-portal-hyprland blueman pavucontrol github-cli brightnessctl cliphist kanshi pam_mount gnome-browser-connector power-profiles-daemon
 ```
 
-## Fancy stuff 
+## Fancy stuff
 
 ```bash
 paru -S aerc w3m iio-sensor-proxy iio-hyprland-git
@@ -49,3 +49,7 @@ paru -S aerc w3m iio-sensor-proxy iio-hyprland-git
 * checkout <https://github.com/jjsullivan5196/wvkbd>
 * copy `./do-not-stow/wvkbd/config.h` to checkout location
 * `sudo make install`
+
+### Make brightness work in gamescope-session-steam
+
+* Just add the user to the video group an configure this udev rule: <https://wiki.archlinux.org/title/Backlight#ACPI>

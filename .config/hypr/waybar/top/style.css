@@ -148,6 +148,14 @@ window#waybar.hidden {
   background: #50fa7b;
 }
 
+#custom-power-profile {
+  margin: 1px 2px 1px 2px;
+  padding-left: 7px;
+  padding-right: 16px;
+  color: #282a36;
+  background: #6272a4;
+}
+
 #custom-toggle-osk {
   margin: 1px 2px 1px 2px;
   padding-left: 9px;

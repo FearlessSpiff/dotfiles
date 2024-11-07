@@ -133,7 +133,7 @@
   },
   "custom/backlight-minus": {
     "format": "{icon}",
-    "on-click": "brightnessctl --min-value=1000 s 10%-",
+    "on-click": "brightnessctl --min-value=1 s 10%-",
     "format-icons": [
       "\uF111"
     ],
@@ -143,5 +143,14 @@
     "format": "⌨",
     "on-click": "/home/steph/.config/hypr/waybar/scripts/wvkbd-toggle.sh",
     "tooltip": false
+  },
+  "custom/power-profile": {
+    "exec": "sleep 0.3 && /home/steph/.config/hypr/waybar/scripts/powerprofilecycle.sh -m",
+    "interval": 120,
+    "on-click": "/home/steph/.config/hypr/waybar/scripts/powerprofilecycle.sh",
+    "exec-on-event": true,
+    "format-icons": [
+      "\uF111"
+    ],
   }
 }

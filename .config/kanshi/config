@@ -3,10 +3,6 @@ profile with-external {
   output "LG Electronics LG TV SSCR2 0x01010101" enable scale 1.25
 }
 
-profile GO4-only {
-  output "BOE 0x088B Unknown" enable scale 1.25
-}
-
-profile SP9-only {
-  output "LG Display 0x0719 0x100003A1" enable scale 2
+profile X1-only {
+  output eDP-1 enable scale 2
 }
