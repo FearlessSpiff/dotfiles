@@ -85,12 +85,14 @@
         " "
       ]
     },
+    "reverse-scrolling": true,
+    "scroll-step": 5.0,
     "on-click": "pavucontrol"
   },
   "bluetooth": {
-    "format": " {status}",
-    "format-disabled": "\uF294 {status}",
-    "format-connected": " {num_connections}",
+    "format": "",
+    "format-disabled": "󰂲",
+    "format-connected": "",
     "tooltip-format": "{controller_alias}\t{controller_address}",
     "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
@@ -104,8 +106,7 @@
   "group/bluetooth": {
     "orientation": "horizontal",
     "modules": [
-      "bluetooth",
-      "custom/bluetoothtoggle"
+      "bluetooth"
     ]
   },
   "group/backlight": {
@@ -132,7 +133,7 @@
   },
   "custom/backlight-minus": {
     "format": "{icon}",
-    "on-click": "brightnessctl s 10%-",
+    "on-click": "brightnessctl --min-value=1 s 10%-",
     "format-icons": [
       "\uF111"
     ],
@@ -142,5 +143,14 @@
     "format": "⌨",
     "on-click": "/home/steph/.config/hypr/waybar/scripts/wvkbd-toggle.sh",
     "tooltip": false
+  },
+  "custom/power-profile": {
+    "exec": "sleep 0.3 && /home/steph/.config/hypr/waybar/scripts/powerprofilecycle.sh -m",
+    "interval": 120,
+    "on-click": "/home/steph/.config/hypr/waybar/scripts/powerprofilecycle.sh",
+    "exec-on-event": true,
+    "format-icons": [
+      "\uF111"
+    ],
   }
 }

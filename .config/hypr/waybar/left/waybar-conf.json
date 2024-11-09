@@ -14,7 +14,8 @@
     "group/apps",
     "group/to-rel-ws",
     "group/layout",
-    "group/move"
+    "group/move",
+    "custom/toggleopaque"
   ],
   "modules-center": []
 }

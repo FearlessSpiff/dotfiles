@@ -1,0 +1,120 @@
+* {
+  border: none;
+  border-radius: 7px;
+  font-family: "JetbrainsMono Nerd Font", serif;
+  font-size: 17px;
+  color: #f8f8f2;
+  margin: 2px 1px 2px 1px;
+}
+
+window#waybar {
+  background: transparent;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+#custom-appmenu {
+  padding: 2px 10px 2px 6px;
+  margin-top: 0;
+}
+
+#custom-killactive {
+  padding: 2px 10px 2px 6px;
+}
+
+#custom-toggleopaque {
+  padding: 2px 10px 2px 6px;
+}
+
+#custom-toggle-osk {
+  padding: 2px 10px 2px 6px;
+  margin-bottom: 2px;
+}
+
+#custom-enable-osk {
+  padding: 2px 10px 2px 6px;
+  margin-bottom: 2px;
+}
+#custom-disable-osk {
+  padding: 2px 10px 2px 6px;
+  margin-bottom: 2px;
+}
+
+#custom-terminal {
+  border-radius: 7px 7px 0 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#custom-filemanager {
+  border-radius: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#custom-browser {
+  border-radius: 0 0 7px 7px;
+  padding: 0 0  0 0;
+  margin-top: 0;
+}
+
+#custom-togglefloating {
+  border-radius: 7px 7px 0 0;
+  padding: 0 9px 0 7px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#custom-move-right,
+#custom-move-left,
+#custom-move-up {
+  border-radius: 0;
+  padding: 0 8px 0 9px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#custom-move-down {
+  border-radius: 0 0 7px 7px;
+  padding: 0 8px 0 9px;
+  margin-top: 0;
+}
+
+#custom-togglesplit {
+  border-radius: 7px 7px 0 0;
+  padding: 0 8px 0 4px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#custom-resize-vert-bigger,
+#custom-resize-vert-smaller,
+#custom-resize-horiz-bigger {
+  border-radius: 0;
+  padding: 0 8px 0 6px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#custom-resize-horiz-smaller {
+  border-radius: 0 0 7px 7px;
+  padding: 0 8px 0 6px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#custom-to-next-ws {
+  border-radius: 7px 7px 0 0;
+  padding: 0 5px 0 7px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#custom-to-prev-ws {
+  border-radius: 0 0 7px 7px;
+  padding: 0 5px 0 7px;
+  margin-top: 0;
+  margin-bottom: 0;
+}

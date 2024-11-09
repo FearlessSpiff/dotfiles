@@ -1,11 +1,10 @@
-import = ["/home/steph/.config/alacritty/dracula.toml"]
 
 [window]
 padding = { x = 5, y = 5 }
 decorations = "full"
 
 [font]
-size = 11
+size = 9
 normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
 italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
 bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
@@ -17,3 +16,6 @@ bindings = [
   { mouse = "Back", action = "IncreaseFontSize"},
   { mouse = "Forward", action = "DecreaseFontSize"},
 ]
+
+[general]
+import = ["/home/steph/.config/alacritty/dracula.toml"]

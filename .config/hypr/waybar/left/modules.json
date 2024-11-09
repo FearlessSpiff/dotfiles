@@ -11,6 +11,11 @@
       "Foot Server": "Terminal"
     }
   },
+  "custom/toggleopaque": {
+    "format": "󱎴",
+    "on-click": "hyprctl dispatch toggleopaque",
+    "tooltip": false
+  },
   "custom/killactive": {
     "format": "\uF05C",
     "on-click": "hyprctl dispatch killactive",

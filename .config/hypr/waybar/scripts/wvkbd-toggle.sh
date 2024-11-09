@@ -7,5 +7,5 @@ WVKBD_PID="$(pgrep -f '.*wvkbd-desktop.*')"
 if [[ -n $WVKBD_PID ]]; then
 	killall wvkbd-desktop
 else
-	/usr/local/bin/wvkbd-desktop &
+	/usr/local/bin/wvkbd-desktop -L 320 &
 fi
