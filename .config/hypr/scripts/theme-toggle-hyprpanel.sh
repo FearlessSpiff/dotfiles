@@ -16,7 +16,7 @@ if [[ "$CURRENT_THEME" == "DARK" ]]; then
   hyprctl hyprpaper wallpaper "desc:LG Electronics LG TV SSCR2 0x01010101,~/.config/hypr/wallpaper/clouds.jpeg"
   hyprctl hyprpaper wallpaper "eDP-1,~/.config/hypr/wallpaper/clouds.jpeg"
   echo "LIGHT" >$CURRENT_THEME_FILE
-  ags -r "useTheme('/home/steph/.config/hyprpanel/dracula-theme.json')"
+  hyprpanel useTheme "/usr/share/hyprpanel/themes/dracula_vivid.json"
   echo "LIGHT" >$CURRENT_THEME_FILE
 #  sed -i 's/style-dark.css/style.css/g' ~/.config/hypr/waybar/scripts/topbar-toggle.sh
 #  sed -i 's/style-dark.css/style.css/g' ~/.config/hypr/waybar/scripts/leftbar-toggle.sh
@@ -27,7 +27,7 @@ else
   hyprctl hyprpaper wallpaper "desc:LG Electronics LG TV SSCR2 0x01010101,~/.config/hypr/wallpaper/black-skull.jpeg"
   hyprctl hyprpaper wallpaper "eDP-1,~/.config/hypr/wallpaper/black-skull.jpeg"
   echo "DARK" >$CURRENT_THEME_FILE
-  ags -r "useTheme('/home/steph/.config/ags/themes/monochrome.json')"
+  hyprpanel useTheme "/usr/share/hyprpanel/themes/monochrome.json"
   echo "DARK" >$CURRENT_THEME_FILE
 #  sed -i 's/style.css/style-dark.css/g' ~/.config/hypr/waybar/scripts/topbar-toggle.sh
 #  sed -i 's/style.css/style-dark.css/g' ~/.config/hypr/waybar/scripts/leftbar-toggle.sh
