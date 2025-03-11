@@ -9,12 +9,12 @@ pacman -S git stow
 ## Other needed dependencies for hyprland
 
 ```bash
-paru -S zsh neovim ttf-font-awesome ttf-jetbrains-mono-nerd otf-commit-mono-nerd dante alacritty mc fzf zsh-fzf-plugin-git dunst wofi lazygit  wf-recorder slurp grim hyprland hyprlock hyprpaper hypridle hyprshot waybar xdg-desktop-portal-hyprland blueman pavucontrol github-cli brightnessctl cliphist kanshi pam_mount gnome-browser-connector power-profiles-daemon ripgrep
-```
+paru -S zsh neovim ttf-font-awesome ttf-jetbrains-mono-nerd otf-commit-mono-nerd dante alacritty mc fzf zsh-fzf-plugin-git dunst wofi lazygit  wf-recorder slurp grim hyprland hyprlock hyprpaper hypridle hyprshot waybar xdg-desktop-portal-hyprland blueman pavucontrol github-cli brightnessctl cliphist kanshi pam_mount gnome-browser-connector power-profiles-daemon ripgrep ags-hyprpanel-git btop kitty n nvmvm
+``
 
 ## New stuff for hyprpanel
 
-`sudo pacman -S dart-sass swww`
+sudo pacman -S dart-sass swww`
 `paru -S grimblast-git gpu-screen-recorder hyprpicker matugen-bin python-gpustat aylurs-gtk-shell-git`
 
 ## Fancy stuff
