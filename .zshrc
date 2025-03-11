@@ -40,3 +40,10 @@ source /usr/share/zsh/plugins/zsh-fzf-plugin/fzf.plugin.zsh
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
+
+# bun completions
+[ -s "/home/steph/.bun/_bun" ] && source "/home/steph/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
