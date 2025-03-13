@@ -58,3 +58,14 @@ paru -S aerc w3m iio-sensor-proxy iio-hyprland-git
 ### Make brightness work in gamescope-session-steam
 
 * Just add the user to the video group an configure this udev rule: <https://wiki.archlinux.org/title/Backlight#ACPI>
+
+### Install gamescope-session-steam
+
+* Enable multilib
+* sudo pacman -S steam (select lib32-vulkan-radeon)
+*
+
+### Fix Zen/Firefox scrolling
+
+* Go to `about:config`
+* disable `apz.gtk.kinetic_scroll.enabled`
