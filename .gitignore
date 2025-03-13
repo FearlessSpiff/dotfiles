@@ -2,3 +2,4 @@
 **.iml
 .config/mc/panels.ini
 .config/aerc/accounts.conf
+.config/hypr/hyprland-host.conf
