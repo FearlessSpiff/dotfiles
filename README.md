@@ -63,7 +63,7 @@ paru -S aerc w3m iio-sensor-proxy iio-hyprland-git
 
 * Enable multilib
 * sudo pacman -S steam (select lib32-vulkan-radeon)
-*
+* paru -S gamescope-session-steam-git
 
 ### Fix Zen/Firefox scrolling
 
