@@ -4,5 +4,5 @@ profile with-external {
 }
 
 profile archyoga-only {
-  output eDP-1 enable scale 1.25
+  output eDP-1 enable scale 1.06666666666667
 }
