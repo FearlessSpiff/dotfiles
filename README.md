@@ -1,5 +1,9 @@
 # How to dotfiles
 
+## Install archlinux
+
+With arch-install as desktop with gnome
+
 ## Absolutely needed dependencies
 
 ```bash
