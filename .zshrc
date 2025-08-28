@@ -27,7 +27,7 @@ precmd() { vcs_info }
 
 zstyle ':vcs_info:git:*' formats '%b '
 setopt PROMPT_SUBST
-PROMPT='%F{green}%*%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f$ '
+PROMPT='%m@%F{green}%*%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f$ '
 
 bindkey  "^[[H"   beginning-of-line
 bindkey  "^[[F"   end-of-line
