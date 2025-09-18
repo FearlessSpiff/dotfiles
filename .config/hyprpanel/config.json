@@ -41,7 +41,8 @@
       ],
       "right": [
         "volume",
-        "battery",
+        "network",
+        "bluetooth",
         "systray",
         "notifications"
       ]
@@ -412,7 +413,7 @@
   "theme.bar.buttons.icon_background": "#44475a",
   "theme.bar.buttons.background": "#282936",
   "theme.bar.buttons.style": "default",
-  "theme.bar.background": "#9141ac",
+  "theme.bar.background": "#282a36",
   "theme.osd.label": "#bd93f9",
   "theme.osd.icon": "#282a36",
   "theme.osd.bar_overflow_color": "#ff5555",
@@ -439,7 +440,7 @@
   "theme.bar.menus.menu.network.switch.disabled": "#44475a",
   "theme.bar.menus.menu.network.switch.enabled": "#bd93f9",
   "theme.bar.buttons.systray.customIcon": "#f8f8f2",
-  "theme.bar.border.color": "#f6f5f4",
+  "theme.bar.border.color": "#bd93f9",
   "theme.bar.menus.menu.media.timestamp": "#f8f8f2",
   "theme.bar.buttons.borderColor": "#bd93f9",
   "theme.bar.buttons.modules.hyprsunset.icon": "#44475a",
@@ -462,5 +463,19 @@
   "theme.bar.menus.border.size": "0.13em",
   "theme.bar.buttons.monochrome": false,
   "theme.bar.shadowMargins": "0px 0px 0px 0px",
-  "theme.bar.shadow": "0px 1px 2px 1px #16161e"
+  "theme.bar.shadow": "0px 1px 2px 1px #16161e",
+  "bar.battery.label": true,
+  "theme.bar.buttons.modules.microphone.border": "#50fa7b",
+  "theme.bar.buttons.modules.microphone.background": "#50fa7b",
+  "theme.bar.buttons.modules.microphone.text": "#44475a",
+  "theme.bar.buttons.modules.microphone.icon": "#44475a",
+  "theme.bar.buttons.modules.microphone.icon_background": "#50fa7b",
+  "theme.bar.buttons.modules.worldclock.text": "#44475a",
+  "theme.bar.buttons.modules.worldclock.background": "#ff79c6",
+  "theme.bar.buttons.modules.worldclock.icon_background": "#ff79c6",
+  "theme.bar.buttons.modules.worldclock.icon": "#44475a",
+  "theme.bar.buttons.modules.worldclock.border": "#ff79c6",
+  "bar.customModules.storage.paths": [
+    "/"
+  ]
 }
