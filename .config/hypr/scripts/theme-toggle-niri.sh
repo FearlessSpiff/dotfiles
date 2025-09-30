@@ -16,6 +16,5 @@ fi
 killall waybar
 ~/.config/hypr/waybar/scripts/topbar-toggle.sh
 
-killall hyprpaper
-sleep 1
+killall --wait hyprpaper
 hyprpaper &
