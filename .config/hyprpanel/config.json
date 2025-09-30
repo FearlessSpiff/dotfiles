@@ -41,6 +41,7 @@
       ],
       "right": [
         "volume",
+        "battery",
         "network",
         "bluetooth",
         "systray",

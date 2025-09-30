@@ -1,0 +1,25 @@
+{
+  "layer": "top",
+  "margin-bottom": 0,
+  "margin-left": 0,
+  "margin-right": 0,
+  "spacing": 0,
+  "include": [
+    "~/.config/hypr/waybar/top-niri/modules.json"
+  ],
+  "modules-left": [
+    "niri/workspaces"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "pulseaudio#output",
+    "group/backlight",
+    "battery",
+    "custom/cliphist",
+    "custom/power-profile",
+    "tray",
+    "custom/exit"
+  ]
+}
