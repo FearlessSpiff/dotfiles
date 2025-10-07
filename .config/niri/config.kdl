@@ -633,5 +633,6 @@ binds {
     Mod+L repeat=false { spawn "~/.config/hypr/scripts/leave.sh"; }
     Mod+W repeat=false { spawn "~/.config/hypr/waybar/scripts/topbar-toggle.sh"; }
     Mod+D repeat=false { spawn "~/.config/hypr/scripts/theme-toggle-niri.sh"; }
+    F9 repeat=false { spawn "~/.config/hypr/scripts/toggle-keyboard-backlight.sh"; }
 
 }
