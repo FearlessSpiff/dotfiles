@@ -274,6 +274,7 @@ layout {
 
 spawn-at-startup "hyprpaper"
 spawn-at-startup "hypridle"
+spawn-at-startup "~/Development/github/Zhaith-Izaliel/iio-niri/target/release/iio-niri"
 // exec-once = dunst
 spawn-at-startup "hyprpanel"
 spawn-sh-at-startup "~/.config/hypr/waybar/scripts/topbar-toggle.sh"
