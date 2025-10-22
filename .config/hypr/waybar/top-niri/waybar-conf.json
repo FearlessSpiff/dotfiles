@@ -15,7 +15,6 @@
   ],
   "modules-right": [
     "pulseaudio#output",
-    "group/backlight",
     "battery",
     "custom/cliphist",
     "custom/power-profile",
