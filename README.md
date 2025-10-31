@@ -17,7 +17,8 @@ paru -S zsh neovim ttf-font-awesome ttf-jetbrains-mono-nerd otf-commit-mono-nerd
 ```
 
 ## Niri quirks
-* If not found in aur install https://github.com/Zhaith-Izaliel/iio-niri
+
+* If not found in aur install <https://github.com/Zhaith-Izaliel/iio-niri>
 
 ## New stuff for hyprpanel
 
@@ -32,7 +33,7 @@ paru -S aerc w3m iio-sensor-proxy iio-hyprland-git
 
 ## After install
 
-* Set physical button to suspend: https://github.com/hyprwm/Hyprland/issues/2614
+* Set physical button to suspend: <https://github.com/hyprwm/Hyprland/issues/2614>
 * Unmmute "Output Devices" in pavucontrol
 
 ## Restore

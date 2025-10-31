@@ -16,4 +16,4 @@ if [[ "$brightnessPct" == "0%" ]]; then
     brightnessPct="1%"
     brightnessctl --class=backlight set 1%
 fi
-dunstify -t 2000 'Brightness' -h int:value:${brightnessPct}
+dunstify -r 667 -t 2000 'Brightness' -h int:value:${brightnessPct}
