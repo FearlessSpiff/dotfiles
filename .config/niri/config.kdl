@@ -3,6 +3,10 @@
 // Check the wiki for a full description of the configuration:
 // https://yalter.github.io/niri/Configuration:-Introduction
 
+// need to manually create config-host.kdl with i.e.
+// include "/home/steph/.config/niri/config-archy.kdl"
+include "/home/steph/.config/niri/config-host.kdl"
+
 // Input device configuration.
 // Find the full list of options on the wiki:
 // https://yalter.github.io/niri/Configuration:-Input
@@ -12,10 +16,10 @@ input {
             // You can set rules, model, layout, variant and options.
             // For more information, see xkeyboard-config(7).
 
-            // For example:
-            //layout "de"
-            layout "ch"
-            variant "de"
+            layout "de"
+//            layout "ch"
+//            variant "de"
+
             // options "grp:win_space_toggle,compose:ralt,ctrl:nocaps"
 
             // If this section is empty, niri will fetch xkb settings
@@ -272,13 +276,16 @@ layout {
 // See the binds section below for more spawn examples.
 
 
-spawn-at-startup "hyprpaper"
-spawn-at-startup "hypridle"
+//spawn-at-startup "hyprpaper"
+//spawn-at-startupawn-at-startup "hypridle"
 spawn-at-startup "caffeine-ng"
 spawn-at-startup "~/Development/github/Zhaith-Izaliel/iio-niri/target/release/iio-niri"
 // exec-once = dunst
-spawn-at-startup "hyprpanel"
-spawn-sh-at-startup "~/.config/hypr/waybar/scripts/topbar-toggle.sh"
+//spawn-at-startup "hyprpanel"
+//spawn-sh-at-startup "~/.config/hypr/waybar/scripts/topbar-toggle.sh"
+spawn-sh-at-startup "alacritty &| zen-browser &|"
+spawn-sh-at-startup "dms run"
+
 //seems to crash hl when resuming: exec-once = iio-hyprland
 //exec-once = waybar -c ~/.config/hypr/waybar/top/waybar-conf.json -s ~/.config/hypr/waybar/top/style.css
 //exec-once = wl-paste --type text --watch cliphist store
@@ -286,6 +293,7 @@ spawn-sh-at-startup "~/.config/hypr/waybar/scripts/topbar-toggle.sh"
 //exec-once = hyprpm enable hyprgrass
 spawn-at-startup "nm-applet"
 spawn-at-startup "blueman-applet"
+spawn-at-startup "sh" "-c" "wl-paste --watch cliphist store &"
 // autostart
 //exec-once = [workspace 1 silent] alacritty
 //exec-once = [workspace 2 silent] zen-browser
@@ -302,7 +310,7 @@ environment {
   XDG_CURRENT_DESKTOP "niri"
   // DISPLAY ":0"
   XDG_SESSION_TYPE "wayland"
-  QT_QPA_PLATFORM "xcb"
+  QT_QPA_PLATFORM "wayland"
   MOZ_ENABLE_WAYLAND "1"
   QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
 }
@@ -407,16 +415,16 @@ binds {
     // Example volume keys mappings for PipeWire & WirePlumber.
     // The allow-when-locked=true property makes them work even when the session is locked.
     // Using spawn-sh allows to pass multiple arguments together with the command.
-    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "~/.config/hypr/scripts/change-volume.sh inc"; }
-    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "~/.config/hypr/scripts/change-volume.sh dec"; }
-    XF86AudioMute        allow-when-locked=true { spawn-sh "~/.config/hypr/scripts/change-volume.sh mutetoggle"; }
+    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+"; }
+    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
+    XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
     XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
  
     // Example brightness key mappings for brightnessctl.
     // You can use regular spawn with multiple arguments too (to avoid going through "sh"),
     // but you need to manually put each argument in separate "" quotes.
-    XF86MonBrightnessUp allow-when-locked=true { spawn-sh "~/.config/hypr/scripts/change-brightness.sh inc"; }
-    XF86MonBrightnessDown allow-when-locked=true { spawn-sh "~/.config/hypr/scripts/change-brightness.sh dec"; }
+    XF86MonBrightnessUp allow-when-locked=true { spawn-sh "brightnessctl -m --class=backlight set +10%"; }
+    XF86MonBrightnessDown allow-when-locked=true { spawn-sh "brightnessctl -m --class=backlight set 10%-"; }
 
     // Open/close the Overview: a zoomed-out view of workspaces and windows.
     // You can also move the mouse into the top-left hot corner,
@@ -593,7 +601,7 @@ binds {
 
     // Move the focused window between the floating and the tiling layout.
     Mod+V       { toggle-window-floating; }
-    Mod+Shift+V { switch-focus-between-floating-and-tiling; }
+    //Mod+Shift+V { switch-focus-between-floating-and-tiling; }
 
     // Toggle tabbed column display mode.
     // Windows in this column will appear as vertical tabs,
@@ -631,8 +639,9 @@ binds {
     Mod+Shift+P { power-off-monitors; }
 
     Mod+Q repeat=false { spawn "alacritty"; }
-    Mod+R repeat=false { spawn "wofi" "--show=drun" "--allow-images"; }
-    Mod+L repeat=false { spawn "~/.config/hypr/scripts/leave.sh"; }
+    Mod+R repeat=false { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
+    Mod+L repeat=false { spawn "dms" "ipc" "call" "powermenu" "toggle"; }
+    Mod+Shift+V repeat=false { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
     Mod+W repeat=false { spawn "~/.config/hypr/waybar/scripts/topbar-toggle.sh"; }
     Mod+D repeat=false { spawn "~/.config/hypr/scripts/theme-toggle-niri.sh"; }
     F9 repeat=false { spawn "~/.config/hypr/scripts/toggle-keyboard-backlight.sh"; }

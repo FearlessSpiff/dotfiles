@@ -13,8 +13,18 @@ pacman -S git stow
 ## Other needed dependencies for hyprland
 
 ```bash
-paru -S zsh neovim ttf-font-awesome ttf-jetbrains-mono-nerd otf-commit-mono-nerd dante alacritty mc fzf zsh-fzf-plugin-git dunst wofi lazygit  wf-recorder slurp grim hyprland hyprlock hyprpaper hypridle hyprshot waybar xdg-desktop-portal-hyprland blueman pavucontrol github-cli brightnessctl cliphist kanshi pam_mount gnome-browser-connector power-profiles-daemon ripgrep ags-hyprpanel-git btop kitty niri xwayland-satellite
+paru -S davfs2 zsh neovim ttf-font-awesome ttf-jetbrains-mono-nerd otf-commit-mono-nerd dante alacritty mc fzf zsh-fzf-plugin-git dunst wofi lazygit  wf-recorder slurp grim hyprland hyprlock hyprpaper hypridle hyprshot waybar xdg-desktop-portal-hyprland blueman pavucontrol github-cli brightnessctl cliphist kanshi pam_mount gnome-browser-connector power-profiles-daemon ripgrep ags-hyprpanel-git btop kitty niri xwayland-satellite dms-shell-bin
 ```
+
+## Webdav automount
+
+* Copy davfs2 config: `cp /etc/davfs2/davfs2.conf ~/.davfs2/`
+* Creat davfs2 secrets (Google it)
+* Use examples under systemd/user
+* Enable/start only xyz.automount
+* Add fstab entry: `https://owncloud.server.ch/remote.php/dav/files/user/ /home/user/Owncloud davfs user,noauto,uid=1000,gid=1000,file_mode=0644,dir_mode=0755 0 0`
+* Add user to network group: `sudo usermod -aG network user`
+* Log out/in
 
 ## Niri quirks
 
