@@ -1,1 +1,13 @@
-// test
+layout {
+    preset-column-widths {
+        proportion 0.33
+        proportion 0.5
+        proportion 1.0
+    }
+}
+
+output "HDMI-A-2" {
+    mode "3840x2160@120"
+
+    scale 1.2
+}

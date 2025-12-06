@@ -3,10 +3,6 @@
 // Check the wiki for a full description of the configuration:
 // https://yalter.github.io/niri/Configuration:-Introduction
 
-// need to manually create config-host.kdl with i.e.
-// include "/home/steph/.config/niri/config-archy.kdl"
-include "/home/steph/.config/niri/config-host.kdl"
-
 // Input device configuration.
 // Find the full list of options on the wiki:
 // https://yalter.github.io/niri/Configuration:-Input
@@ -17,8 +13,6 @@ input {
             // For more information, see xkeyboard-config(7).
 
             layout "de"
-//            layout "ch"
-//            variant "de"
 
             // options "grp:win_space_toggle,compose:ralt,ctrl:nocaps"
 
@@ -647,3 +641,7 @@ binds {
     F9 repeat=false { spawn "~/.config/hypr/scripts/toggle-keyboard-backlight.sh"; }
 
 }
+
+// need to manually create config-host.kdl with i.e.
+// include "/home/steph/.config/niri/config-archy.kdl"
+include "/home/steph/.config/niri/config-host.kdl"
