@@ -277,8 +277,8 @@ spawn-at-startup "~/Development/github/Zhaith-Izaliel/iio-niri/target/release/ii
 // exec-once = dunst
 //spawn-at-startup "hyprpanel"
 //spawn-sh-at-startup "~/.config/hypr/waybar/scripts/topbar-toggle.sh"
-spawn-sh-at-startup "alacritty &| zen-browser &|"
 spawn-sh-at-startup "dms run"
+spawn-at-startup "~/.config/niri/scripts/autostart.sh"
 
 //seems to crash hl when resuming: exec-once = iio-hyprland
 //exec-once = waybar -c ~/.config/hypr/waybar/top/waybar-conf.json -s ~/.config/hypr/waybar/top/style.css
