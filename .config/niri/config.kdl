@@ -636,7 +636,7 @@ binds {
     Mod+R repeat=false { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
     Mod+L repeat=false { spawn "dms" "ipc" "call" "powermenu" "toggle"; }
     Mod+Shift+V repeat=false { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
-    Mod+W repeat=false { spawn "dms" "ipc" "call" "bar" "toggle"; }
+    Mod+W repeat=false { spawn "dms" "ipc" "call" "bar" "toggle" "index" "0"; }
     //Mod+D repeat=false { spawn "~/.config/hypr/scripts/theme-toggle-niri.sh"; }
     F9 repeat=false { spawn "~/.config/hypr/scripts/toggle-keyboard-backlight.sh"; }
 
