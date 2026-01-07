@@ -256,6 +256,10 @@
         {
           "id": "systemUpdate",
           "enabled": true
+        },
+        {
+          "id": "dankActions:variant_1767564860656",
+          "enabled": true
         }
       ],
       "centerWidgets": [
@@ -301,10 +305,12 @@
       "fontScale": 1,
       "autoHide": false,
       "autoHideDelay": 250,
-      "openOnOverview": false,
+      "openOnOverview": true,
       "visible": true,
       "popupGapsAuto": false,
-      "popupGapsManual": 4
+      "popupGapsManual": 4,
+      "widgetOutlineEnabled": false,
+      "widgetOutlineColor": "secondary"
     }
   ],
   "configVersion": 2
