@@ -2,7 +2,42 @@
 
 ## Install archlinux
 
-With arch-install as desktop with gnome
+* Use `archinstall` with Desktop gnome install (Still use Gnome to check progress)
+* Reboot and then in Gnome
+* Install bare minimum: `pacman -S git stow`
+* Clone this repo and stow it
+
+```bash
+git clone https://github.com/FearlessSpiff/dotfiles.git
+cd dotfiles
+git clone https://github.com/FearlessSpiff/dotfiles.git
+stow -t /home/<username> .
+```
+
+* Install paru
+
+```bash
+sudo pacman -S --needed base-devel
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
+```
+
+* Install the rest
+
+```bash
+paru -S git-zsh-completion github-cli lazygit openssh nvim alacritty ttf-jetbrains-mono-nerd inter-font wl-clipboard quickshell-git dms-shell-bin cava cliphist i2c-tools matugen qt6-multimedia qt6ct greetd-dms-greeter-git zen-browser-bin
+
+```
+
+* Enable greetd-dms-greeter (Caution, Gnome needs gdm because it uses it as lockscreen. If Gnome is used more, switch to gdm!)
+
+```bash
+dms greeter enable
+dms greeter sync
+```
+
+TODO: cleanup down here
 
 ## Absolutely needed dependencies
 
