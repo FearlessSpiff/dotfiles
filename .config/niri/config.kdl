@@ -30,7 +30,7 @@ input {
     // All commented-out settings here are examples, not defaults.
     touchpad {
         // off
-        tap
+        // tap
         // dwt
         // dwtp
         // drag false
@@ -105,6 +105,17 @@ input {
     // If the position is unset or results in an overlap, the output is instead placed
     // automatically.
     position x=1280 y=0
+}
+
+output "LG Electronics LG TV SSCR2 0x01010101" {
+  layout {
+    preset-column-widths {
+        proportion 0.33
+        proportion 0.5
+        proportion 0.66
+        proportion 1.0
+    }
+  }
 }
 
 // Settings that influence how windows are positioned and sized.
@@ -285,8 +296,8 @@ spawn-at-startup "~/.config/niri/scripts/autostart.sh"
 //exec-once = wl-paste --type text --watch cliphist store
 //exec-once = wl-paste --type image --watch cliphist store
 //exec-once = hyprpm enable hyprgrass
-spawn-at-startup "nm-applet"
-spawn-at-startup "blueman-applet"
+//spawn-at-startup "nm-applet"
+//spawn-at-startup "blueman-applet"
 spawn-at-startup "sh" "-c" "wl-paste --watch cliphist store &"
 // autostart
 //exec-once = [workspace 1 silent] alacritty
@@ -305,8 +316,10 @@ environment {
   // DISPLAY ":0"
   XDG_SESSION_TYPE "wayland"
   QT_QPA_PLATFORM "wayland"
-  MOZ_ENABLE_WAYLAND "1"
+  QT_QPA_PLATFORMTHEME "gnome"
+  QT_STYLE_OVERRIDE "adwaita-dark"
   QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
+  MOZ_ENABLE_WAYLAND "1"
 }
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.
@@ -369,6 +382,11 @@ window-rule {
     // block-out-from "screencast"
 }
 
+window-rule {
+    match app-id="org.gnome.Calculator"
+    default-column-width { proportion 0.33333333; }
+}
+
 // Example: enable rounded corners for all windows.
 // (This example rule is commented out with a "/-" in front.)
 window-rule {
@@ -406,19 +424,11 @@ binds {
     // For example, this is a standard bind to toggle the screen reader (orca).
     Super+Alt+S allow-when-locked=true hotkey-overlay-title=null { spawn-sh "pkill orca || exec orca"; }
 
-    // Example volume keys mappings for PipeWire & WirePlumber.
-    // The allow-when-locked=true property makes them work even when the session is locked.
-    // Using spawn-sh allows to pass multiple arguments together with the command.
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
     XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
     XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
  
-    // Example brightness key mappings for brightnessctl.
-    // You can use regular spawn with multiple arguments too (to avoid going through "sh"),
-    // but you need to manually put each argument in separate "" quotes.
-    XF86MonBrightnessUp allow-when-locked=true { spawn-sh "dms ipc call brightness increment 10 backlight:amdgpu_bl1"; }
-    XF86MonBrightnessDown allow-when-locked=true { spawn-sh "dms ipc call brightness decrement 10 backlight:amdgpu_bl1"; }
 
     // Open/close the Overview: a zoomed-out view of workspaces and windows.
     // You can also move the mouse into the top-left hot corner,
@@ -644,4 +654,4 @@ binds {
 
 // need to manually create config-host.kdl with i.e.
 // include "/home/steph/.config/niri/config-archy.kdl"
-include "/home/steph/.config/niri/config-host.kdl"
+include "/home/steph/.config/niri/config-omniarchy.kdl"

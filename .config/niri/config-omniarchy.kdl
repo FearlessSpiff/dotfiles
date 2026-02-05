@@ -1,0 +1,27 @@
+spawn-at-startup "iio-niri" "--monitor" "eDP-1"
+
+binds {
+    XF86MonBrightnessUp allow-when-locked=true { spawn-sh "dms ipc call brightness increment 10 \"\""; }
+    XF86MonBrightnessDown allow-when-locked=true { spawn-sh "dms ipc call brightness decrement 10 \"\""; }
+    XF86AudioMicMute     allow-when-locked=true { spawn-sh "dms ipc call audio micmute"; }
+    XF86Calculator { spawn-sh "dms ipc call audio mute"; }
+    XF86Launch2 repeat=false { toggle-overview; }
+}
+
+input {
+    keyboard {
+        xkb {
+//            lpen floating windowayout "de"
+            layout "ch"
+            variant "de"
+        }
+    }
+
+    touch {
+      map-to-output "eDP-1"
+    }
+
+    tablet {
+      map-to-output "eDP-1"
+    }
+}

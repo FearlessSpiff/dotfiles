@@ -1,0 +1,27 @@
+{
+  "dankBatteryAlerts": {
+    "enabled": true,
+    "criticalThreshold": 7,
+    "warningThreshold": 15
+  },
+  "dankActions": {
+    "enabled": true,
+    "variants": [
+      {
+        "icon": "keyboard",
+        "displayText": "",
+        "displayCommand": "",
+        "clickCommand": "/home/steph/.config/common/scripts/toggle-wvkbd.sh",
+        "middleClickCommand": "/home/steph/.config/common/scripts/toggle-wvkbd.sh",
+        "rightClickCommand": "/home/steph/.config/common/scripts/toggle-wvkbd.sh",
+        "updateInterval": 0,
+        "showIcon": true,
+        "showText": false,
+        "visibilityCommand": "",
+        "visibilityInterval": 0,
+        "id": "variant_1768158987895",
+        "name": "wvkbd"
+      }
+    ]
+  }
+}

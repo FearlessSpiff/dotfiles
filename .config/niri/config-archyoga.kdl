@@ -1,3 +1,8 @@
+binds {
+    XF86MonBrightnessUp allow-when-locked=true { spawn-sh "dms ipc call brightness increment 10 backlight:amdgpu_bl1"; }
+    XF86MonBrightnessDown allow-when-locked=true { spawn-sh "dms ipc call brightness decrement 10 backlight:amdgpu_bl1"; }
+}
+
 input {
     keyboard {
         xkb {
