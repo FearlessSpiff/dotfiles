@@ -108,6 +108,9 @@ input {
 }
 
 output "LG Electronics LG TV SSCR2 0x01010101" {
+  
+  scale 1.25
+
   layout {
     preset-column-widths {
         proportion 0.33
