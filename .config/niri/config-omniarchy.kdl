@@ -1,4 +1,4 @@
-spawn-at-startup "iio-niri" "--monitor" "eDP-1"
+spawn-at-startup "iio-niri" "listen"
 
 binds {
     XF86MonBrightnessUp allow-when-locked=true { spawn-sh "dms ipc call brightness increment 10 \"\""; }
