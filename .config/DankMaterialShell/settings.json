@@ -552,6 +552,10 @@
         {
           "id": "dankActions:variant_1782939812518",
           "enabled": true
+        },
+        {
+          "id": "dankActions:variant_1782940553396",
+          "enabled": true
         }
       ],
       "centerWidgets": [

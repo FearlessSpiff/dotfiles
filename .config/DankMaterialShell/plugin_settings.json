@@ -36,6 +36,21 @@
         "visibilityInterval": 0,
         "id": "variant_1782939812518",
         "name": "overview"
+      },
+      {
+        "icon": "close",
+        "displayText": "",
+        "displayCommand": "",
+        "clickCommand": "niri msg action close-window",
+        "middleClickCommand": "niri msg action close-window",
+        "rightClickCommand": "niri msg action close-window",
+        "updateInterval": 0,
+        "showIcon": true,
+        "showText": false,
+        "visibilityCommand": "",
+        "visibilityInterval": 0,
+        "id": "variant_1782940553396",
+        "name": "close"
       }
     ]
   }
