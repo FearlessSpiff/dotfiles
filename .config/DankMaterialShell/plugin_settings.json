@@ -21,6 +21,21 @@
         "visibilityInterval": 0,
         "id": "variant_1768158987895",
         "name": "wvkbd"
+      },
+      {
+        "icon": "grid_view",
+        "displayText": "Overview",
+        "displayCommand": "",
+        "clickCommand": "niri msg action toggle-overview",
+        "middleClickCommand": "niri msg action toggle-overview",
+        "rightClickCommand": "niri msg action toggle-overview",
+        "updateInterval": 0,
+        "showIcon": true,
+        "showText": false,
+        "visibilityCommand": "",
+        "visibilityInterval": 0,
+        "id": "variant_1782939812518",
+        "name": "overview"
       }
     ]
   }
