@@ -1,9 +1,6 @@
 #!/bin/bash
-
-WVKBD_PID="$(pgrep -f '.*wvkbd-deskintl.*')"
-
-if [[ -n $WVKBD_PID ]]; then
+if pgrep -x wvkbd-deskintl >/dev/null; then
   killall wvkbd-deskintl
 else
-  /usr/bin/wvkbd-deskintl -L 300 &
+  niri msg action spawn -- wvkbd-deskintl -L 300
 fi
