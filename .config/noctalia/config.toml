@@ -20,7 +20,17 @@ end = [
     "session"
 ]
 margin_ends = 4
-start = [ "launcher", "workspaces", "spacer_6", "Toggle-OSK", "Show-Overview", "Close-App" ]
+start = [
+    "launcher",
+    "spacer_7",
+    "workspaces",
+    "spacer_6",
+    "Toggle-OSK",
+    "spacer_8",
+    "Show-Overview",
+    "spacer_9",
+    "Close-App"
+]
 thickness = 30
 
 [desktop_widgets]
@@ -112,6 +122,9 @@ type = "custom_button"
 [widget.control-center]
 enabled = false
 
+[widget.launcher]
+glyph = "rocket"
+
 [widget.spacer_2]
 type = "spacer"
 
@@ -125,7 +138,20 @@ type = "spacer"
 type = "spacer"
 
 [widget.spacer_6]
+length = 40
+type = "spacer"
+
+[widget.spacer_7]
+type = "spacer"
+
+[widget.spacer_8]
+type = "spacer"
+
+[widget.spacer_9]
 type = "spacer"
 
 [widget.weather]
 show_condition = false
+
+[widget.workspaces]
+show_labels = false
