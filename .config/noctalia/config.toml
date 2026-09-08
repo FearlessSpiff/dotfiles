@@ -1,0 +1,100 @@
+config_version = 14
+
+[bar.default]
+background_opacity = 0.79999998211860657
+center = [ "clock", "spacer_5", "weather" ]
+concave_edge_corners = false
+end = [
+    "tray",
+    "notifications",
+    "clipboard",
+    "spacer_3",
+    "network",
+    "bluetooth",
+    "spacer_2",
+    "volume",
+    "brightness",
+    "battery",
+    "control-center",
+    "spacer_4",
+    "session"
+]
+margin_ends = 4
+start = [ "launcher", "workspaces" ]
+thickness = 30
+
+[desktop_widgets]
+enabled = false
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@eDP-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 823.0
+    cy = 847.0
+    output = "eDP-1"
+    placement_height = 1029.0
+    placement_width = 1646.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+[theme]
+builtin = "Dracula"
+mode = "dark"
+source = "builtin"
+wallpaper_scheme = "m3-content"
+
+[wallpaper]
+directory = "/home/steph/.config/common/wallpaper"
+
+    [wallpaper.default]
+    path = "/home/steph/.config/common/wallpaper/black-skull.jpeg"
+
+    [wallpaper.last]
+    path = "/home/steph/.config/common/wallpaper/black-skull.jpeg"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/steph/.config/common/wallpaper/black-skull.jpeg"
+
+[widget.clock]
+format = "{:%b %-d   %H:%M}"
+
+[widget.weather]
+show_condition = false
+
+[widget.control-center]
+enabled = false
+
+[widget.spacer_2]
+type = "spacer"
+
+[widget.spacer_3]
+type = "spacer"
+
+[widget.spacer_4]
+type = "spacer"

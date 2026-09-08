@@ -1,10 +1,16 @@
 spawn-at-startup "iio-niri" "listen"
 
 binds {
-    XF86MonBrightnessUp allow-when-locked=true { spawn-sh "dms ipc call brightness increment 10 \"\""; }
-    XF86MonBrightnessDown allow-when-locked=true { spawn-sh "dms ipc call brightness decrement 10 \"\""; }
-    XF86AudioMicMute     allow-when-locked=true { spawn-sh "dms ipc call audio micmute"; }
-    XF86Calculator { spawn-sh "dms ipc call audio mute"; }
+    //XF86MonBrightnessUp allow-when-locked=true { spawn-sh "dms ipc call brightness increment 10 \"\""; }
+    //XF86MonBrightnessDown allow-when-locked=true { spawn-sh "dms ipc call brightness decrement 10 \"\""; }
+    //XF86AudioMicMute     allow-when-locked=true { spawn-sh "dms ipc call audio micmute"; }
+    //XF86Calculator { spawn-sh "dms ipc call audio mute"; }
+    //XF86Launch2 repeat=false { toggle-overview; }
+    
+    XF86MonBrightnessUp allow-when-locked=true { spawn-sh "noctalia msg brightness-up 10% \"\""; }
+    XF86MonBrightnessDown allow-when-locked=true { spawn-sh "noctalia msg brightness-down 10% \"\""; }
+    XF86AudioMicMute     allow-when-locked=true { spawn-sh "noctalia msg mic-mute"; }
+    XF86Calculator { spawn-sh "noctalia msg volume-mute"; }
     XF86Launch2 repeat=false { toggle-overview; }
 }
 
