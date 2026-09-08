@@ -20,11 +20,14 @@ end = [
     "session"
 ]
 margin_ends = 4
-start = [ "launcher", "workspaces" ]
+start = [ "launcher", "workspaces", "spacer_6", "Toggle-OSK", "Show-Overview", "Close-App" ]
 thickness = 30
 
 [desktop_widgets]
 enabled = false
+
+[location]
+address = "Zurich, Switzerland"
 
 [lockscreen_widgets]
 enabled = false
@@ -83,9 +86,28 @@ directory = "/home/steph/.config/common/wallpaper"
 
 [widget.clock]
 format = "{:%b %-d   %H:%M}"
+[widget.Close-App]
+glyph = "close"
+tooltip = "Close App"
+type = "custom_button"
 
-[widget.weather]
-show_condition = false
+    [widget.Close-App.actions]
+    left = "exec niri msg action close-window"
+
+[widget.Show-Overview]
+glyph = "layout-2"
+tooltip = "Show Overview"
+type = "custom_button"
+
+    [widget.Show-Overview.actions]
+    left = "exec niri msg action toggle-overview"
+
+[widget.Toggle-OSK]
+glyph = "keyboard"
+type = "custom_button"
+
+    [widget.Toggle-OSK.actions]
+    left = "exec /home/steph/.config/common/scripts/toggle-wvkbd.sh"
 
 [widget.control-center]
 enabled = false
@@ -98,3 +120,12 @@ type = "spacer"
 
 [widget.spacer_4]
 type = "spacer"
+
+[widget.spacer_5]
+type = "spacer"
+
+[widget.spacer_6]
+type = "spacer"
+
+[widget.weather]
+show_condition = false
