@@ -13,7 +13,6 @@ end = [
     "bluetooth",
     "spacer_2",
     "volume",
-    "brightness",
     "battery",
     "control-center",
     "spacer_4",
