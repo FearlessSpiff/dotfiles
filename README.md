@@ -106,7 +106,7 @@ paru -S aerc w3m iio-sensor-proxy iio-hyprland-git
 
 * checkout <https://github.com/jjsullivan5196/wvkbd>
 * copy `./do-not-stow/wvkbd/config.h` to checkout location
-* `sudo make install`
+* `sudo make LAYOUT=deskintl install`
 
 ### Make brightness work in gamescope-session-steam
 
