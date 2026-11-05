@@ -11,11 +11,12 @@ wf-recorder_check() {
 
 wf-recorder_check
 
-EXTERNAL_DISPLAY=$(dms ipc call outputs current | grep '(ID 1)' | grep -oP 'DP-(\d)')
-#EXTERNAL_DISPLAY=$(hyprctl monitors all | grep '(ID 1)' | grep -oP 'DP-(\d)')
-SELECTION=$(echo -e "screenshot selection\nscreenshot window\nscreenshot both displays\nrecord selection\nrecord internal display\nrecord external display" | wofi --dmenu)
-IMG="${HOME}/Pictures/Screenshots"
-VID="${HOME}/Videos/Recordings/$(date +%Y-%m-%d_%H-%m-%s).mp4"
+# internal panel is eDP-* or DSI-*, everything else counts as external
+INTERNAL_DISPLAY=$(niri msg --json outputs | jq -r 'keys[] | select(test("^(eDP|DSI)-"))' | head -n1)
+EXTERNAL_DISPLAY=$(niri msg --json outputs | jq -r 'keys[] | select(test("^(eDP|DSI)-") | not)' | head -n1)
+SELECTION=$(echo -e "screenshot selection\nscreenshot window\nscreenshot display\nscreenshot both displays\nrecord selection\nrecord internal display\nrecord external display" | wofi --dmenu)
+IMG="${HOME}/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%M-%S).png"
+VID="${HOME}/Videos/Recordings/$(date +%Y-%m-%d_%H-%M-%S).mp4"
 
 # find alsa device: pw-cli list-objects | grep node.name
 AUDIO_DEVICE="alsa_output.pci-0000_00_1f.3-platform-skl_hda_dsp_generic.HiFi__Speaker__sink"

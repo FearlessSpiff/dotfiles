@@ -1,0 +1,2 @@
+spawn-at-startup "iio-niri" "listen"
+spawn-at-startup "kanshi" "-c" "/home/steph/.config/kanshi/config-archmate"

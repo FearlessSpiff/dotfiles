@@ -1,0 +1,8 @@
+profile with-external {
+  output DSI-1 disable
+  output "LG Electronics LG TV SSCR2 0x01010101" enable scale 1.25
+}
+
+profile archmate-only {
+  output DSI-1 enable scale 1.75
+}
